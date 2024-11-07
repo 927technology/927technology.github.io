@@ -727,6 +727,75 @@
   "templates"                       : {
     "contacts"                      : [
       {
+        "_note"                     : "generic-contact",
+        "addresses"                 : [
+          {
+            "enable"                : false,
+            "string"                : null
+          }
+        ],
+        "can_submit_commands"       : false,
+        "contact_groups"            : [
+          {
+            "enable"                : false,
+            "name"                  : null
+          }
+        ],
+        "email"                     : null,
+        "enable"                    : true,
+        "name"                      : {
+          "alias"                   : null,
+          "string"                  : "generic-contact"
+        },
+        "notification"              : {
+          "host"                    : {
+            "commands"              : [
+              {
+                "enable"            : true,
+                "name"              : "notification-host-by-email"
+              },
+              {
+                "enable"            : false,
+                "name"              : "test"
+              }
+            ],
+            "enable"                : false,
+            "options"               : {
+              "down"                : true,
+              "flapping"            : true,
+              "recovery"            : true,
+              "scheduled_down"      : true,
+              "up"                  : true
+            },
+            "period"                : "24x7"
+          },
+          "pager"                   : null,
+          "service"                 : {
+            "commands"              : [
+              {
+                "enable"            : true,
+                "name"              : "notify-service-by-email"
+              }
+            ],
+            "enable"                : true,
+            "options"               : {
+              "critical"            : true,
+              "flapping"            : true,
+              "recovery"            : true,
+              "scheduled_down"      : true,
+              "up"                  : true,
+              "warning"             : true
+            },
+            "period"                : "24x7"
+          }
+        },
+        "retain"                    : {
+          "nonstatus"               : null,
+          "status"                  : null
+        }
+      },
+      {
+        "_note"                     : "generic-host",
         "addresses"                 : [
           {
             "enable"                : false,
@@ -795,6 +864,122 @@
       }
     ],
     "hosts"                         : [
+      {
+        "_note"                     : "cloud-infrastructure",
+        "action_url"                : null,
+        "address"                   : null,
+        "check"                     : {
+          "active"                  : null,
+          "command"                 : "927-always_alive",
+          "freshness"               : {
+            "enable"                : false,
+            "threshold"             : null
+          },
+          "initial"                 : null,
+          "interval"                : {
+            "value"                 : 5,
+            "retry"                 : 1
+          },
+          "max_attempts"            : 10,
+          "passive"                 : null,
+          "perfdata"                : null,
+          "period"                  : "24x7"
+        },
+        "contacts"                  : [
+          {
+            "enable"                : false,
+            "name"                  : null
+          }
+        ],
+        "contact_groups"            : [
+          {
+            "enable"                : false,
+            "name"                  : null
+          }
+        ],
+        "enable"                    : true,
+        "event_handler"             : {
+          "enable"                  : true,
+          "name"                    : null
+        },
+        "flap_detection"            : {
+          "enable"                  : true,
+          "options"                 : {
+            "down"                  : false,
+            "operational"           : false,
+            "unreachable"           : false
+          },
+          "threshold"               : {
+            "high"                  : null,
+            "low"                   : null
+          }
+        },
+        "hostgroups"                : [
+          {
+            "enable"                : false,
+            "name"                  : null
+          }
+        ],
+        "icon"                      : {
+          "coordinates"             : {
+            "2d"                    : {
+              "x"                   : null,
+              "y"                   : null
+            },
+            "3d"                    : {
+              "x"                   : null,
+              "y"                   : null,
+              "z"                   : null
+            }
+          },
+          "initial_state"           : null,
+          "file"                    : {
+            "alternate"             : null,
+            "image"                 : null,
+            "statusmap"             : null,
+            "vrml"                  : null
+          }
+        },
+        "name"                      : {
+          "display"                 : null,
+          "string"                  : "cloud-infrastructure"
+        },
+        "notes"                     : {
+          "string"                  : null,
+          "url"                     : null
+        },
+        "notification"              : {
+          "enable"                  : true,
+          "first_delay"             : null,
+          "interval"                : 120,
+          "options"                 : {
+            "down"                  : true,
+            "flapping"              : false,
+            "recovery"              : true,
+            "none"                  : false,
+            "scheduled_down"        : false,
+            "unreachable"           : true
+          },
+          "period"                  : "workhours"
+        },
+        "obsess"                    : null,
+        "parents"                   : [
+          {
+            "enable"                : false,
+            "name"                  : null
+          }
+        ],
+        "retain"                    : {
+          "nonstatus"               : true,
+          "status"                  : true
+        },
+        "stalking"                  : {
+          "down"                    : false,
+          "operational"             : false,
+          "up"                      : false
+        },
+        "use"                       : null
+      },
       {
         "_note"                     : "generic-host",
         "action_url"                : null,
@@ -1636,6 +1821,226 @@
     ],
     "services"                      : [
       {
+        "_note"                     : "generic-service",
+        "action_url"                : null,
+        "check"                     : {
+          "active"                  : true,
+          "command"                 : null,
+          "freshness"               : {
+            "enable"                : true,
+            "threshold"             : null
+          },
+          "initial"                 : null,
+          "interval"                : {
+            "check"                 : 10,
+            "retry"                 : 2
+          },
+          "max_attempts"            : 3,
+          "passive"                 : true,
+          "perfdata"                : true,
+          "period"                  : "24x7"
+        },
+        "contacts"                  : [
+          {
+            "enable"                : false,
+            "name"                  : null
+          }
+        ],
+        "contact_groups"            : [
+          {
+            "enable"                : null,
+            "name"                  : null
+          }
+        ],
+        "enable"                    : true,
+        "event_handler"             : {
+          "enable"                  : true,
+          "name"                    : null
+        },
+        "flap_detection"            : {
+          "enable"                  : true,
+          "options"                 : {
+            "down"                  : true,
+            "operational"           : true,
+            "unreachable"           : true
+          },
+          "threshold"               : {
+            "high"                  : null,
+            "low"                   : null
+          }
+        },
+        "hosts"                     : [
+          {
+            "enable"                : false,
+            "name"                  : null
+          }
+        ],
+        "hostgroups"                : [
+          {
+            "enable"                : false,
+            "name"                  : null
+          }
+        ],
+        "icon"                      : {
+          "file"                    : {
+            "alternate"             : null,
+            "image"                 : null
+          }
+        },
+        "is_volatile"               : false,
+        "name"                      : {
+          "display"                 : "Generic Service",
+          "string"                  : "generic-service"
+        },
+        "notes"                     : {
+          "string"                  : null,
+          "url"                     : null
+        },
+        "notification"              : {
+          "enable"                  : true,
+          "first_delay"             : null,
+          "interval"                : 60,
+          "options"                 : {
+            "critical"              : true,
+            "flapping"              : false,
+            "recovery"              : false,
+            "scheduled_down"        : false,
+            "unknown"               : true,
+            "warning"               : true
+          },
+          "period"                  : "24x7"
+        },
+        "obsess"                    : true,
+        "retain"                    : {
+          "nonstatus"               : true,
+          "status"                  : true
+        },
+        "servicegroups"             : [
+          {
+            "enable"                : false,
+            "name"                  : null
+          }
+        ],
+        "stalking"                  : {
+          "critical"                : true,
+          "ok"                      : true,
+          "unknown"                 : true,
+          "warning"                 : true
+        },
+        "use"                       : null
+      },
+      {
+        "_note"                     : "local-service",
+        "action_url"                : null,
+        "check"                     : {
+          "active"                  : null,
+          "command"                 : null,
+          "freshness"               : {
+            "enable"                : null,
+            "threshold"             : null
+          },
+          "initial"                 : null,
+          "interval"                : {
+            "check"                 : 5,
+            "retry"                 : 1
+          },
+          "max_attempts"            : 4,
+          "passive"                 : null,
+          "perfdata"                : null,
+          "period"                  : null
+        },
+        "contacts"                  : [
+          {
+            "enable"                : false,
+            "name"                  : null
+          }
+        ],
+        "contact_groups"            : [
+          {
+            "enable"                : null,
+            "name"                  : null
+          }
+        ],
+        "enable"                    : true,
+        "event_handler"             : {
+          "enable"                  : false,
+          "name"                    : null
+        },
+        "flap_detection"            : {
+          "enable"                  : false,
+          "options"                 : {
+            "down"                  : false,
+            "operational"           : false,
+            "unreachable"           : false
+          },
+          "threshold"               : {
+            "high"                  : null,
+            "low"                   : null
+          }
+        },
+        "hosts"                     : [
+          {
+            "enable"                : false,
+            "name"                  : null
+          }
+        ],
+        "hostgroups"                : [
+          {
+            "enable"                : false,
+            "name"                  : "local-service"
+          }
+        ],
+        "icon"                      : {
+          "file"                    : {
+            "alternate"             : null,
+            "image"                 : null
+          }
+        },
+        "is_volatile"               : false,
+        "name"                      : {
+          "display"                 : "Local Service",
+          "string"                  : "local-service"
+        },
+        "notes"                     : {
+          "string"                  : null,
+          "url"                     : null
+        },
+        "notification"              : {
+          "enable"                  : null,
+          "first_delay"             : null,
+          "interval"                : null,
+          "options"                 : {
+            "critical"              : false,
+            "flapping"              : false,
+            "recovery"              : false,
+            "scheduled_down"        : false,
+            "unknown"               : false,
+            "warning"               : false
+          },
+          "period"                  : null
+        },
+        "obsess"                    : null,
+        "retain"                    : {
+          "nonstatus"               : null,
+          "status"                  : null
+        },
+        "servicegroups"             : [
+          {
+            "enable"                : false,
+            "name"                  : null
+          }
+        ],
+        "stalking"                  : {
+          "critical"                : false,
+          "ok"                      : false,
+          "unknown"                 : false,
+          "warning"                 : false
+        },
+        "use"                       : "generic-service"
+      },
+
+      {
+        "_note"                     : "Oracle Cloud Infrastructure",
         "action_url"                : null,
         "check"                     : {
           "active"                  : null,
