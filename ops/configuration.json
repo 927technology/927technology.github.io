@@ -208,6 +208,7 @@
   ],
   "contacts"                        : [
     {
+      "_note"                       : "Naemon Admin",
       "can_submit_commands"         : null,
       "contact_groups"              : [
         {
@@ -744,7 +745,7 @@
         "email"                     : null,
         "enable"                    : true,
         "name"                      : {
-          "alias"                   : null,
+          "alias"                   : "Generic Contact",
           "string"                  : "generic-contact"
         },
         "notification"              : {
@@ -759,7 +760,7 @@
                 "name"              : "test"
               }
             ],
-            "enable"                : false,
+            "enable"                : true,
             "options"               : {
               "down"                : true,
               "flapping"            : true,
