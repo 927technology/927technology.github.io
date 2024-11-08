@@ -753,11 +753,7 @@
             "commands"              : [
               {
                 "enable"            : true,
-                "name"              : "notification-host-by-email"
-              },
-              {
-                "enable"            : false,
-                "name"              : "test"
+                "name"              : "notifify-host-by-email"
               }
             ],
             "enable"                : true,
@@ -821,7 +817,7 @@
             "commands"              : [
               {
                 "enable"            : true,
-                "name"              : "notification-host-by-email"
+                "name"              : "notifify-host-by-email"
               },
               {
                 "enable"            : false,
