@@ -368,118 +368,31 @@
     {
       "enable"                      : true,
       "iac"                         : [],
+
       "ops"                         : [
         {
-          "action_url"            : null,
-          "address"               : null,
-          "check"                 : {
-            "active"              : null,
-            "command"             : null,
-            "freshness"           : {
-              "enable"            : null,
-              "threshold"         : null
-            },
-            "initial"             : null,
-            "interval"            : {
-              "check"             : 5,
-              "retry"             : 1
-            },
-            "max_attempts"        : 3,
-            "passive"             : null,
-            "perfdata"            : true,
-            "period"              : null
-          },
-          "contacts"              : [
+          "action_url"                : null,
+          "enable"                    : true,
+          "hostgroups"                : [
             {
-              "enable"            : false,
-              "name"              : null
+              "enable"                : false,
+              "name"                  : null
             }
           ],
-          "contact_groups"        : [
+          "members"                   : [
             {
-              "enable"            : null,
-              "name"              : null
+              "enable"                : false,
+              "name"                  : null
             }
           ],
-          "event_handler"         : {
-            "enable"              : true,
-            "name"                : null
+          "name"                      : {
+            "display"                 : "Cloud - OCI",
+            "string"                  : "oci-cloud"
           },
-          "flap_detection"        : {
-            "enable"              : true,
-            "options"             : {
-              "down"              : true,
-              "operational"       : true,
-              "unreachable"       : true
-            },
-            "threshold"           : {
-              "high"              : null,
-              "low"               : null
-            }
-          },
-          "hostgroups"            : [
-            {
-              "enable"            : null,
-              "name"              : "null"
-            }
-          ],
-          "icon"                  : {
-            "coordinates"         : {
-              "2d"                : {
-                "x"               : null,
-                "y"               : null
-              },
-              "3d"                : {
-                "x"               : null,
-                "y"               : null,
-                "z"               : null
-              }
-            },
-            "file"                : {
-              "alternate"         : null,
-              "image"             : null,
-              "vrml"              : null
-            }
-          },
-          "name"                  : {
-            "display"             : "Oracle Cloud Infrastructure",
-            "string"              : "oci-cloud"
-          },
-          "notes"                 : {
-            "string"              : null,
-            "url"                 : null
-          },
-          "notification"          : {
-            "enable"              : true,
-            "first_delay"         : null,
-            "interval"            : 120,
-            "options"             : {
-              "down"              : false,
-              "flapping"          : false,
-              "recovery"          : false,
-              "none"              : false,
-              "scheduled_down"    : false,
-              "unreachable"       : false
-            },
-            "period"              : "24x7"
-          },
-          "obsess"                : null,
-          "parents"               : [
-            {
-              "enable"            : false,
-              "name"              : null
-            }
-          ],
-          "retain"                : {
-            "nonstatus"           : true,
-            "status"              : true
-          },
-          "stalking"              : {
-            "down"                : null,
-            "operational"         : null,
-            "up"                  : null
-          },
-          "use"                   : null
+          "notes"                     : {
+            "string"                  : null,
+            "url"                     : null
+          }     
         }
       ]
     }
