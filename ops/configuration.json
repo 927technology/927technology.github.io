@@ -276,100 +276,104 @@
   ],
   "hostgroups"                      : [
     {
-      "action_url"                : null,
-      "enable"                    : true,
-      "hostgroups"                : [
+      "ops"                         : [
         {
-          "enable"                : false,
-          "name"                  : null
-        }
-      ],
-      "members"                   : [
+          "action_url"                : null,
+          "enable"                    : true,
+          "hostgroups"                : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "members"                   : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "name"                      : {
+            "display"                  : "Servers - Linux",
+            "string"                   : "servers-linux"
+          },
+          "notes"                     : {
+            "string"                  : null,
+            "url"                     : null
+          }  
+        },
         {
-          "enable"                : false,
-          "name"                  : null
-        }
-      ],
-      "name"                      : {
-        "display"                  : "Servers - Linux",
-        "string"                   : "servers-linux"
-      },
-      "notes"                     : {
-        "string"                  : null,
-        "url"                     : null
-      }  
-    },
-    {
-      "action_url"                : null,
-      "enable"                    : true,
-      "hostgroups"                : [
+          "action_url"                : null,
+          "enable"                    : true,
+          "hostgroups"                : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "members"                   : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "name"                      : {
+            "display"                 : "Network - Printers",
+            "string"                  : "network-printers"
+          },
+          "notes"                     : {
+            "string"                  : null,
+            "url"                     : null
+          }     
+        },
         {
-          "enable"                : false,
-          "name"                  : null
-        }
-      ],
-      "members"                   : [
+          "action_url"                : null,
+          "enable"                    : true,
+          "hostgroups"                : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "members"                   : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "name"                      : {
+            "display"                 : "Network - Routers",
+            "string"                  : "network-routers"
+          },
+          "notes"                     : {
+            "string"                  : null,
+            "url"                     : null
+          }     
+        },
         {
-          "enable"                : false,
-          "name"                  : null
+          "action_url"                : null,
+          "enable"                    : true,
+          "hostgroups"                : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "members"                   : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "name"                      : {
+            "display"                 : "OCI - Data",
+            "string"                  : "oci-data"
+          },
+          "notes"                     : {
+            "string"                  : null,
+            "url"                     : null
+          }     
         }
-      ],
-      "name"                      : {
-        "display"                 : "Network - Printers",
-        "string"                  : "network-printers"
-      },
-      "notes"                     : {
-        "string"                  : null,
-        "url"                     : null
-      }     
-    },
-    {
-      "action_url"                : null,
-      "enable"                    : true,
-      "hostgroups"                : [
-        {
-          "enable"                : false,
-          "name"                  : null
-        }
-      ],
-      "members"                   : [
-        {
-          "enable"                : false,
-          "name"                  : null
-        }
-      ],
-      "name"                      : {
-        "display"                 : "Network - Routers",
-        "string"                  : "network-routers"
-      },
-      "notes"                     : {
-        "string"                  : null,
-        "url"                     : null
-      }     
-    },
-    {
-      "action_url"                : null,
-      "enable"                    : true,
-      "hostgroups"                : [
-        {
-          "enable"                : false,
-          "name"                  : null
-        }
-      ],
-      "members"                   : [
-        {
-          "enable"                : false,
-          "name"                  : null
-        }
-      ],
-      "name"                      : {
-        "display"                 : "OCI - Data",
-        "string"                  : "oci-data"
-      },
-      "notes"                     : {
-        "string"                  : null,
-        "url"                     : null
-      }     
+      ]
     }
   ],
   "servicedependancies"             : [
