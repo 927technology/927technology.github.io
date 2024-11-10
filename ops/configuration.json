@@ -276,6 +276,8 @@
   ],
   "hostgroups"                      : [
     {
+      "enable"                      : true,
+      "iac"                         : [],
       "ops"                         : [
         {
           "action_url"                : null,
@@ -300,7 +302,13 @@
             "string"                  : null,
             "url"                     : null
           }  
-        },
+        }
+      ]
+    },
+    {
+      "enable"                      : true,
+      "iac"                         : [],
+      "ops"                         : [
         {
           "action_url"                : null,
           "enable"                    : true,
@@ -324,7 +332,14 @@
             "string"                  : null,
             "url"                     : null
           }     
-        },
+        }
+      ]
+
+    },
+    {
+      "enable"                      : true,
+      "iac"                         : [],
+      "ops"                         : [
         {
           "action_url"                : null,
           "enable"                    : true,
@@ -348,7 +363,13 @@
             "string"                  : null,
             "url"                     : null
           }     
-        },
+        }
+      ]
+    },
+    {
+      "enable"                      : true,
+      "iac"                         : [],
+      "ops"                         : [
         {
           "action_url"                : null,
           "enable"                    : true,
