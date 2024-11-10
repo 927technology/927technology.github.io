@@ -334,7 +334,6 @@
           }     
         }
       ]
-
     },
     {
       "enable"                      : true,
@@ -371,28 +370,116 @@
       "iac"                         : [],
       "ops"                         : [
         {
-          "action_url"                : null,
-          "enable"                    : true,
-          "hostgroups"                : [
-            {
-              "enable"                : false,
-              "name"                  : null
-            }
-          ],
-          "members"                   : [
-            {
-              "enable"                : false,
-              "name"                  : null
-            }
-          ],
-          "name"                      : {
-            "display"                 : "OCI - Data",
-            "string"                  : "oci-data"
+          "action_url"            : null,
+          "address"               : null,
+          "check"                 : {
+            "active"              : null,
+            "command"             : null,
+            "freshness"           : {
+              "enable"            : null,
+              "threshold"         : null
+            },
+            "initial"             : null,
+            "interval"            : {
+              "check"             : 5,
+              "retry"             : 1
+            },
+            "max_attempts"        : 3,
+            "passive"             : null,
+            "perfdata"            : true,
+            "period"              : null
           },
-          "notes"                     : {
-            "string"                  : null,
-            "url"                     : null
-          }     
+          "contacts"              : [
+            {
+              "enable"            : false,
+              "name"              : null
+            }
+          ],
+          "contact_groups"        : [
+            {
+              "enable"            : null,
+              "name"              : null
+            }
+          ],
+          "event_handler"         : {
+            "enable"              : true,
+            "name"                : null
+          },
+          "flap_detection"        : {
+            "enable"              : true,
+            "options"             : {
+              "down"              : true,
+              "operational"       : true,
+              "unreachable"       : true
+            },
+            "threshold"           : {
+              "high"              : null,
+              "low"               : null
+            }
+          },
+          "hostgroups"            : [
+            {
+              "enable"            : null,
+              "name"              : "null"
+            }
+          ],
+          "icon"                  : {
+            "coordinates"         : {
+              "2d"                : {
+                "x"               : null,
+                "y"               : null
+              },
+              "3d"                : {
+                "x"               : null,
+                "y"               : null,
+                "z"               : null
+              }
+            },
+            "file"                : {
+              "alternate"         : null,
+              "image"             : null,
+              "vrml"              : null
+            }
+          },
+          "name"                  : {
+            "display"             : "Oracle Cloud Infrastructure",
+            "string"              : "oci-cloud"
+          },
+          "notes"                 : {
+            "string"              : null,
+            "url"                 : null
+          },
+          "notification"          : {
+            "enable"              : true,
+            "first_delay"         : null,
+            "interval"            : 120,
+            "options"             : {
+              "down"              : false,
+              "flapping"          : false,
+              "recovery"          : false,
+              "none"              : false,
+              "scheduled_down"    : false,
+              "unreachable"       : false
+            },
+            "period"              : "24x7"
+          },
+          "obsess"                : null,
+          "parents"               : [
+            {
+              "enable"            : false,
+              "name"              : null
+            }
+          ],
+          "retain"                : {
+            "nonstatus"           : true,
+            "status"              : true
+          },
+          "stalking"              : {
+            "down"                : null,
+            "operational"         : null,
+            "up"                  : null
+          },
+          "use"                   : null
         }
       ]
     }
@@ -887,932 +974,980 @@
     ],
     "hosts"                         : [
       {
-        "_note"                     : "cloud-infrastructure",
-        "action_url"                : null,
-        "address"                   : null,
-        "check"                     : {
-          "active"                  : null,
-          "command"                 : "927-always_alive",
-          "freshness"               : {
-            "enable"                : false,
-            "threshold"             : null
-          },
-          "initial"                 : null,
-          "interval"                : {
-            "value"                 : 5,
-            "retry"                 : 1
-          },
-          "max_attempts"            : 10,
-          "passive"                 : null,
-          "perfdata"                : null,
-          "period"                  : "24x7"
-        },
-        "contacts"                  : [
-          {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "contact_groups"            : [
-          {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
         "enable"                    : true,
-        "event_handler"             : {
-          "enable"                  : true,
-          "name"                    : null
-        },
-        "flap_detection"            : {
-          "enable"                  : true,
-          "options"                 : {
-            "down"                  : false,
-            "operational"           : false,
-            "unreachable"           : false
-          },
-          "threshold"               : {
-            "high"                  : null,
-            "low"                   : null
-          }
-        },
-        "hostgroups"                : [
+        "iac"                       : [],
+        "ops"                       : [
           {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "icon"                      : {
-          "coordinates"             : {
-            "2d"                    : {
-              "x"                   : null,
-              "y"                   : null
+            "_note"                     : "cloud-infrastructure",
+            "action_url"                : null,
+            "address"                   : null,
+            "check"                     : {
+              "active"                  : null,
+              "command"                 : "927-always_alive",
+              "freshness"               : {
+                "enable"                : false,
+                "threshold"             : null
+              },
+              "initial"                 : null,
+              "interval"                : {
+                "value"                 : 5,
+                "retry"                 : 1
+              },
+              "max_attempts"            : 10,
+              "passive"                 : null,
+              "perfdata"                : null,
+              "period"                  : "24x7"
             },
-            "3d"                    : {
-              "x"                   : null,
-              "y"                   : null,
-              "z"                   : null
-            }
-          },
-          "initial_state"           : null,
-          "file"                    : {
-            "alternate"             : null,
-            "image"                 : null,
-            "statusmap"             : null,
-            "vrml"                  : null
+            "contacts"                  : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "contact_groups"            : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "enable"                    : true,
+            "event_handler"             : {
+              "enable"                  : true,
+              "name"                    : null
+            },
+            "flap_detection"            : {
+              "enable"                  : true,
+              "options"                 : {
+                "down"                  : false,
+                "operational"           : false,
+                "unreachable"           : false
+              },
+              "threshold"               : {
+                "high"                  : null,
+                "low"                   : null
+              }
+            },
+            "hostgroups"                : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "icon"                      : {
+              "coordinates"             : {
+                "2d"                    : {
+                  "x"                   : null,
+                  "y"                   : null
+                },
+                "3d"                    : {
+                  "x"                   : null,
+                  "y"                   : null,
+                  "z"                   : null
+                }
+              },
+              "initial_state"           : null,
+              "file"                    : {
+                "alternate"             : null,
+                "image"                 : null,
+                "statusmap"             : null,
+                "vrml"                  : null
+              }
+            },
+            "name"                      : {
+              "display"                 : null,
+              "string"                  : "cloud-infrastructure"
+            },
+            "notes"                     : {
+              "string"                  : null,
+              "url"                     : null
+            },
+            "notification"              : {
+              "enable"                  : true,
+              "first_delay"             : null,
+              "interval"                : 120,
+              "options"                 : {
+                "down"                  : true,
+                "flapping"              : false,
+                "recovery"              : true,
+                "none"                  : false,
+                "scheduled_down"        : false,
+                "unreachable"           : true
+              },
+              "period"                  : "workhours"
+            },
+            "obsess"                    : null,
+            "parents"                   : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "retain"                    : {
+              "nonstatus"               : true,
+              "status"                  : true
+            },
+            "stalking"                  : {
+              "down"                    : false,
+              "operational"             : false,
+              "up"                      : false
+            },
+            "use"                       : null
           }
-        },
-        "name"                      : {
-          "display"                 : null,
-          "string"                  : "cloud-infrastructure"
-        },
-        "notes"                     : {
-          "string"                  : null,
-          "url"                     : null
-        },
-        "notification"              : {
-          "enable"                  : true,
-          "first_delay"             : null,
-          "interval"                : 120,
-          "options"                 : {
-            "down"                  : true,
-            "flapping"              : false,
-            "recovery"              : true,
-            "none"                  : false,
-            "scheduled_down"        : false,
-            "unreachable"           : true
-          },
-          "period"                  : "workhours"
-        },
-        "obsess"                    : null,
-        "parents"                   : [
-          {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "retain"                    : {
-          "nonstatus"               : true,
-          "status"                  : true
-        },
-        "stalking"                  : {
-          "down"                    : false,
-          "operational"             : false,
-          "up"                      : false
-        },
-        "use"                       : null
+        ]
       },
       {
-        "_note"                     : "generic-host",
-        "action_url"                : null,
-        "address"                   : null,
-        "check"                     : {
-          "active"                  : null,
-          "command"                 : null,
-          "freshness"               : {
-            "enable"                : false,
-            "threshold"             : null
-          },
-          "initial"                 : null,
-          "interval"                : {
-            "value"                 : null,
-            "retry"                 : null
-          },
-          "max_attempts"            : null,
-          "passive"                 : null,
-          "perfdata"                : null,
-          "period"                  : null
-        },
-        "contacts"                  : [
-          {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "contact_groups"            : [
-          {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
         "enable"                    : true,
-        "event_handler"             : {
-          "enable"                  : true,
-          "name"                    : null
-        },
-        "flap_detection"            : {
-          "enable"                  : true,
-          "options"                 : {
-            "down"                  : false,
-            "operational"           : false,
-            "unreachable"           : false
-          },
-          "threshold"               : {
-            "high"                  : null,
-            "low"                   : null
-          }
-        },
-        "hostgroups"                : [
+        "iac"                       : [],
+        "ops"                       : [
           {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "icon"                      : {
-          "coordinates"             : {
-            "2d"                    : {
-              "x"                   : null,
-              "y"                   : null
+            "_note"                     : "generic-host",
+            "action_url"                : null,
+            "address"                   : null,
+            "check"                     : {
+              "active"                  : null,
+              "command"                 : null,
+              "freshness"               : {
+                "enable"                : false,
+                "threshold"             : null
+              },
+              "initial"                 : null,
+              "interval"                : {
+                "value"                 : null,
+                "retry"                 : null
+              },
+              "max_attempts"            : null,
+              "passive"                 : null,
+              "perfdata"                : null,
+              "period"                  : null
             },
-            "3d"                    : {
-              "x"                   : null,
-              "y"                   : null,
-              "z"                   : null
-            }
-          },
-          "initial_state"           : null,
-          "file"                    : {
-            "alternate"             : null,
-            "image"                 : null,
-            "statusmap"             : null,
-            "vrml"                  : null
+            "contacts"                  : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "contact_groups"            : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "enable"                    : true,
+            "event_handler"             : {
+              "enable"                  : true,
+              "name"                    : null
+            },
+            "flap_detection"            : {
+              "enable"                  : true,
+              "options"                 : {
+                "down"                  : false,
+                "operational"           : false,
+                "unreachable"           : false
+              },
+              "threshold"               : {
+                "high"                  : null,
+                "low"                   : null
+              }
+            },
+            "hostgroups"                : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "icon"                      : {
+              "coordinates"             : {
+                "2d"                    : {
+                  "x"                   : null,
+                  "y"                   : null
+                },
+                "3d"                    : {
+                  "x"                   : null,
+                  "y"                   : null,
+                  "z"                   : null
+                }
+              },
+              "initial_state"           : null,
+              "file"                    : {
+                "alternate"             : null,
+                "image"                 : null,
+                "statusmap"             : null,
+                "vrml"                  : null
+              }
+            },
+            "name"                      : {
+              "display"                 : null,
+              "string"                  : "generic-host"
+            },
+            "notes"                     : {
+              "string"                  : null,
+              "url"                     : null
+            },
+            "notification"              : {
+              "enable"                  : true,
+              "first_delay"             : null,
+              "interval"                : 120,
+              "options"                 : {
+                "down"                  : false,
+                "flapping"              : false,
+                "recovery"              : false,
+                "none"                  : false,
+                "scheduled_down"        : false,
+                "unreachable"           : false
+              },
+              "period"                  : "24x7"
+            },
+            "obsess"                    : null,
+            "parents"                   : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "retain"                    : {
+              "nonstatus"               : true,
+              "status"                  : true
+            },
+            "stalking"                  : {
+              "down"                    : false,
+              "operational"             : false,
+              "up"                      : false
+            },
+            "use"                       : null
           }
-        },
-        "name"                      : {
-          "display"                 : null,
-          "string"                  : "generic-host"
-        },
-        "notes"                     : {
-          "string"                  : null,
-          "url"                     : null
-        },
-        "notification"              : {
-          "enable"                  : true,
-          "first_delay"             : null,
-          "interval"                : 120,
-          "options"                 : {
-            "down"                  : false,
-            "flapping"              : false,
-            "recovery"              : false,
-            "none"                  : false,
-            "scheduled_down"        : false,
-            "unreachable"           : false
-          },
-          "period"                  : "24x7"
-        },
-        "obsess"                    : null,
-        "parents"                   : [
-          {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "retain"                    : {
-          "nonstatus"               : true,
-          "status"                  : true
-        },
-        "stalking"                  : {
-          "down"                    : false,
-          "operational"             : false,
-          "up"                      : false
-        },
-        "use"                       : null
+        ]
       },
       {
-        "_note"                     : "generic-printer",
-        "action_url"                : null,
-        "address"                   : null,
-        "check"                     : {
-          "active"                  : null,
-          "command"                 : "check-host-alive",
-          "freshness"               : {
-            "enable"                : false,
-            "threshold"             : null
-          },
-          "initial"                 : null,
-          "interval"                : {
-            "value"                 : 5,
-            "retry"                 : 1
-          },
-          "max_attempts"            : 10,
-          "passive"                 : null,
-          "perfdata"                : null,
-          "period"                  : null
-        },
-        "contacts"                  : [
-          {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "contact_groups"            : [
-          {
-            "enable"                : false,
-            "name"                  : "admins"
-          }
-        ],
         "enable"                    : true,
-        "event_handler"             : {
-          "enable"                  : true,
-          "name"                    : null
-        },
-        "flap_detection"            : {
-          "enable"                  : true,
-          "options"                 : {
-            "down"                  : false,
-            "operational"           : false,
-            "unreachable"           : false
-          },
-          "threshold"               : {
-            "high"                  : null,
-            "low"                   : null
-          }
-        },
-        "hostgroups"                : [
+        "iac"                       : [],
+        "ops"                       : [
           {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "icon"                      : {
-          "coordinates"             : {
-            "2d"                    : {
-              "x"                   : null,
-              "y"                   : null
+            "_note"                     : "generic-printer",
+            "action_url"                : null,
+            "address"                   : null,
+            "check"                     : {
+              "active"                  : null,
+              "command"                 : "check-host-alive",
+              "freshness"               : {
+                "enable"                : false,
+                "threshold"             : null
+              },
+              "initial"                 : null,
+              "interval"                : {
+                "value"                 : 5,
+                "retry"                 : 1
+              },
+              "max_attempts"            : 10,
+              "passive"                 : null,
+              "perfdata"                : null,
+              "period"                  : null
             },
-            "3d"                    : {
-              "x"                   : null,
-              "y"                   : null,
-              "z"                   : null
-            }
-          },
-          "initial_state"           : null,
-          "file"                    : {
-            "alternate"             : null,
-            "image"                 : null,
-            "statusmap"             : null,
-            "vrml"                  : null
+            "contacts"                  : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "contact_groups"            : [
+              {
+                "enable"                : false,
+                "name"                  : "admins"
+              }
+            ],
+            "enable"                    : true,
+            "event_handler"             : {
+              "enable"                  : true,
+              "name"                    : null
+            },
+            "flap_detection"            : {
+              "enable"                  : true,
+              "options"                 : {
+                "down"                  : false,
+                "operational"           : false,
+                "unreachable"           : false
+              },
+              "threshold"               : {
+                "high"                  : null,
+                "low"                   : null
+              }
+            },
+            "hostgroups"                : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "icon"                      : {
+              "coordinates"             : {
+                "2d"                    : {
+                  "x"                   : null,
+                  "y"                   : null
+                },
+                "3d"                    : {
+                  "x"                   : null,
+                  "y"                   : null,
+                  "z"                   : null
+                }
+              },
+              "initial_state"           : null,
+              "file"                    : {
+                "alternate"             : null,
+                "image"                 : null,
+                "statusmap"             : null,
+                "vrml"                  : null
+              }
+            },
+            "name"                      : {
+              "display"                 : null,
+              "string"                  : "generic-printer"
+            },
+            "notes"                     : {
+              "string"                  : null,
+              "url"                     : null
+            },
+            "notification"              : {
+              "enable"                  : true,
+              "first_delay"             : null,
+              "interval"                : 30,
+              "options"                 : {
+                "down"                  : true,
+                "flapping"              : false,
+                "recovery"              : true,
+                "none"                  : false,
+                "scheduled_down"        : false,
+                "unreachable"           : false
+              },
+              "period"                  : "workhours"
+            },
+            "obsess"                    : null,
+            "parents"                   : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "retain"                    : {
+              "nonstatus"               : true,
+              "status"                  : true
+            },
+            "stalking"                  : {
+              "down"                    : false,
+              "operational"             : false,
+              "up"                      : false
+            },
+            "use"                       : "generic-host"
           }
-        },
-        "name"                      : {
-          "display"                 : null,
-          "string"                  : "generic-printer"
-        },
-        "notes"                     : {
-          "string"                  : null,
-          "url"                     : null
-        },
-        "notification"              : {
-          "enable"                  : true,
-          "first_delay"             : null,
-          "interval"                : 30,
-          "options"                 : {
-            "down"                  : true,
-            "flapping"              : false,
-            "recovery"              : true,
-            "none"                  : false,
-            "scheduled_down"        : false,
-            "unreachable"           : false
-          },
-          "period"                  : "workhours"
-        },
-        "obsess"                    : null,
-        "parents"                   : [
-          {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "retain"                    : {
-          "nonstatus"               : true,
-          "status"                  : true
-        },
-        "stalking"                  : {
-          "down"                    : false,
-          "operational"             : false,
-          "up"                      : false
-        },
-        "use"                       : "generic-host"
+        ]
       },
       {
-        "_note"                     : "generic-switch",
-        "action_url"                : null,
-        "address"                   : null,
-        "check"                     : {
-          "active"                  : null,
-          "command"                 : "check-host-alive",
-          "freshness"               : {
-            "enable"                : false,
-            "threshold"             : null
-          },
-          "initial"                 : null,
-          "interval"                : {
-            "value"                 : 1,
-            "retry"                 : 1
-          },
-          "max_attempts"            : 10,
-          "passive"                 : null,
-          "perfdata"                : null,
-          "period"                  : null
-        },
-        "contacts"                  : [
-          {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "contact_groups"            : [
-          {
-            "enable"                : false,
-            "name"                  : "admins"
-          }
-        ],
         "enable"                    : true,
-        "event_handler"             : {
-          "enable"                  : true,
-          "name"                    : null
-        },
-        "flap_detection"            : {
-          "enable"                  : true,
-          "options"                 : {
-            "down"                  : false,
-            "operational"           : false,
-            "unreachable"           : false
-          },
-          "threshold"               : {
-            "high"                  : null,
-            "low"                   : null
-          }
-        },
-        "hostgroups"                : [
+        "iac"                       : [],
+        "ops"                       : [
           {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "icon"                      : {
-          "coordinates"             : {
-            "2d"                    : {
-              "x"                   : null,
-              "y"                   : null
+            "_note"                     : "generic-switch",
+            "action_url"                : null,
+            "address"                   : null,
+            "check"                     : {
+              "active"                  : null,
+              "command"                 : "check-host-alive",
+              "freshness"               : {
+                "enable"                : false,
+                "threshold"             : null
+              },
+              "initial"                 : null,
+              "interval"                : {
+                "value"                 : 1,
+                "retry"                 : 1
+              },
+              "max_attempts"            : 10,
+              "passive"                 : null,
+              "perfdata"                : null,
+              "period"                  : null
             },
-            "3d"                    : {
-              "x"                   : null,
-              "y"                   : null,
-              "z"                   : null
-            }
-          },
-          "initial_state"           : null,
-          "file"                    : {
-            "alternate"             : null,
-            "image"                 : null,
-            "statusmap"             : null,
-            "vrml"                  : null
+            "contacts"                  : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "contact_groups"            : [
+              {
+                "enable"                : false,
+                "name"                  : "admins"
+              }
+            ],
+            "enable"                    : true,
+            "event_handler"             : {
+              "enable"                  : true,
+              "name"                    : null
+            },
+            "flap_detection"            : {
+              "enable"                  : true,
+              "options"                 : {
+                "down"                  : false,
+                "operational"           : false,
+                "unreachable"           : false
+              },
+              "threshold"               : {
+                "high"                  : null,
+                "low"                   : null
+              }
+            },
+            "hostgroups"                : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "icon"                      : {
+              "coordinates"             : {
+                "2d"                    : {
+                  "x"                   : null,
+                  "y"                   : null
+                },
+                "3d"                    : {
+                  "x"                   : null,
+                  "y"                   : null,
+                  "z"                   : null
+                }
+              },
+              "initial_state"           : null,
+              "file"                    : {
+                "alternate"             : null,
+                "image"                 : null,
+                "statusmap"             : null,
+                "vrml"                  : null
+              }
+            },
+            "name"                      : {
+              "display"                 : null,
+              "string"                  : "generic-switch"
+            },
+            "notes"                     : {
+              "string"                  : null,
+              "url"                     : null
+            },
+            "notification"              : {
+              "enable"                  : true,
+              "first_delay"             : null,
+              "interval"                : 30,
+              "options"                 : {
+                "down"                  : true,
+                "flapping"              : false,
+                "recovery"              : true,
+                "none"                  : false,
+                "scheduled_down"        : false,
+                "unreachable"           : false
+              },
+              "period"                  : "workhours"
+            },
+            "obsess"                    : null,
+            "parents"                   : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "retain"                    : {
+              "nonstatus"               : true,
+              "status"                  : true
+            },
+            "stalking"                  : {
+              "down"                    : false,
+              "operational"             : false,
+              "up"                      : false
+            },
+            "use"                       : "generic-host"
           }
-        },
-        "name"                      : {
-          "display"                 : null,
-          "string"                  : "generic-switch"
-        },
-        "notes"                     : {
-          "string"                  : null,
-          "url"                     : null
-        },
-        "notification"              : {
-          "enable"                  : true,
-          "first_delay"             : null,
-          "interval"                : 30,
-          "options"                 : {
-            "down"                  : true,
-            "flapping"              : false,
-            "recovery"              : true,
-            "none"                  : false,
-            "scheduled_down"        : false,
-            "unreachable"           : false
-          },
-          "period"                  : "workhours"
-        },
-        "obsess"                    : null,
-        "parents"                   : [
-          {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "retain"                    : {
-          "nonstatus"               : true,
-          "status"                  : true
-        },
-        "stalking"                  : {
-          "down"                    : false,
-          "operational"             : false,
-          "up"                      : false
-        },
-        "use"                       : "generic-host"
+        ]
       },
       {
-        "_note"                     : "linux-server",
-        "action_url"                : null,
-        "address"                   : null,
-        "check"                     : {
-          "active"                  : null,
-          "command"                 : "check-host-alive",
-          "freshness"               : {
-            "enable"                : false,
-            "threshold"             : null
-          },
-          "initial"                 : null,
-          "interval"                : {
-            "value"                 : 5,
-            "retry"                 : 1
-          },
-          "max_attempts"            : 3,
-          "passive"                 : null,
-          "perfdata"                : null,
-          "period"                  : "24x7"
-        },
-        "contacts"                  : [
-          {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "contact_groups"            : [
-          {
-            "enable"                : null,
-            "name"                  : null
-          }
-        ],
         "enable"                    : true,
-        "event_handler"             : {
-          "enable"                  : true,
-          "name"                    : null
-        },
-        "flap_detection"            : {
-          "enable"                  : true,
-          "options"                 : {
-            "down"                  : true,
-            "operational"           : true,
-            "unreachable"           : true
-          },
-          "threshold"               : {
-            "high"                  : null,
-            "low"                   : null
-          }
-        },
-        "hostgroups"                : [
+        "iac"                       : [],
+        "ops"                       : [
           {
-            "enable"                : true,
-            "name"                  : "linux-server"
-          }
-        ],
-        "icon"                      : {
-          "coordinates"             : {
-            "2d"                    : {
-              "x"                   : null,
-              "y"                   : 2
+            "_note"                     : "linux-server",
+            "action_url"                : null,
+            "address"                   : null,
+            "check"                     : {
+              "active"                  : null,
+              "command"                 : "check-host-alive",
+              "freshness"               : {
+                "enable"                : false,
+                "threshold"             : null
+              },
+              "initial"                 : null,
+              "interval"                : {
+                "value"                 : 5,
+                "retry"                 : 1
+              },
+              "max_attempts"            : 3,
+              "passive"                 : null,
+              "perfdata"                : null,
+              "period"                  : "24x7"
             },
-            "3d"                    : {
-              "x"                   : null,
-              "y"                   : null,
-              "z"                   : null
-            }
-          },
-          "initial_state"           : "up",
-          "file"                    : {
-            "alternate"             : null,
-            "image"                 : null,
-            "statusmap"             : null,
-            "vrml"                  : null
+            "contacts"                  : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "contact_groups"            : [
+              {
+                "enable"                : null,
+                "name"                  : null
+              }
+            ],
+            "enable"                    : true,
+            "event_handler"             : {
+              "enable"                  : true,
+              "name"                    : null
+            },
+            "flap_detection"            : {
+              "enable"                  : true,
+              "options"                 : {
+                "down"                  : true,
+                "operational"           : true,
+                "unreachable"           : true
+              },
+              "threshold"               : {
+                "high"                  : null,
+                "low"                   : null
+              }
+            },
+            "hostgroups"                : [
+              {
+                "enable"                : true,
+                "name"                  : "linux-server"
+              }
+            ],
+            "icon"                      : {
+              "coordinates"             : {
+                "2d"                    : {
+                  "x"                   : null,
+                  "y"                   : 2
+                },
+                "3d"                    : {
+                  "x"                   : null,
+                  "y"                   : null,
+                  "z"                   : null
+                }
+              },
+              "initial_state"           : "up",
+              "file"                    : {
+                "alternate"             : null,
+                "image"                 : null,
+                "statusmap"             : null,
+                "vrml"                  : null
+              }
+            },
+            "name"                      : {
+              "display"                 : null,
+              "string"                  : "linux-server"
+            },
+            "notes"                     : {
+              "string"                  : null,
+              "url"                     : null
+            },
+            "notification"              : {
+              "enable"                  : true,
+              "first_delay"             : null,
+              "interval"                : 120,
+              "options"                 : {
+                "down"                  : true,
+                "flapping"              : false,
+                "recovery"              : true,
+                "none"                  : false,
+                "scheduled_down"        : false,
+                "unreachable"           : true
+              },
+              "period"                  : "24x7"
+            },
+            "obsess"                    : null,
+            "parents"                   : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "retain"                    : {
+              "nonstatus"               : true,
+              "status"                  : true
+            },
+            "stalking"                  : {
+              "down"                    : false,
+              "operational"             : false,
+              "up"                      : false
+            },
+            "use"                       : "linux-server"
           }
-        },
-        "name"                      : {
-          "display"                 : null,
-          "string"                  : "linux-server"
-        },
-        "notes"                     : {
-          "string"                  : null,
-          "url"                     : null
-        },
-        "notification"              : {
-          "enable"                  : true,
-          "first_delay"             : null,
-          "interval"                : 120,
-          "options"                 : {
-            "down"                  : true,
-            "flapping"              : false,
-            "recovery"              : true,
-            "none"                  : false,
-            "scheduled_down"        : false,
-            "unreachable"           : true
-          },
-          "period"                  : "24x7"
-        },
-        "obsess"                    : null,
-        "parents"                   : [
-          {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "retain"                    : {
-          "nonstatus"               : true,
-          "status"                  : true
-        },
-        "stalking"                  : {
-          "down"                    : false,
-          "operational"             : false,
-          "up"                      : false
-        },
-        "use"                       : "linux-server"
+        ]
       },
       {
-        "_note"                     : "network-routers",
-        "action_url"                : null,
-        "address"                   : null,
-        "check"                     : {
-          "active"                  : null,
-          "command"                 : "check-host-alive",
-          "freshness"               : {
-            "enable"                : false,
-            "threshold"             : null
-          },
-          "initial"                 : null,
-          "interval"                : {
-            "value"                 : 2,
-            "retry"                 : 1
-          },
-          "max_attempts"            : 3,
-          "passive"                 : null,
-          "perfdata"                : null,
-          "period"                  : null
-        },
-        "contacts"                  : [
-          {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "contact_groups"            : [
-          {
-            "enable"                : null,
-            "name"                  : null
-          }
-        ],
         "enable"                    : true,
-        "event_handler"             : {
-          "enable"                  : true,
-          "name"                    : null
-        },
-        "flap_detection"            : {
-          "enable"                  : true,
-          "options"                 : {
-            "down"                  : true,
-            "operational"           : true,
-            "unreachable"           : true
-          },
-          "threshold"               : {
-            "high"                  : null,
-            "low"                   : null
-          }
-        },
-        "hostgroups"                : [
+        "iac"                       : [],
+        "ops"                       : [
           {
-            "enable"                : true,
-            "name"                  : "network-routers"
-          }
-        ],
-        "icon"                      : {
-          "coordinates"             : {
-            "2d"                    : {
-              "x"                   : null,
-              "y"                   : null
+            "_note"                     : "network-routers",
+            "action_url"                : null,
+            "address"                   : null,
+            "check"                     : {
+              "active"                  : null,
+              "command"                 : "check-host-alive",
+              "freshness"               : {
+                "enable"                : false,
+                "threshold"             : null
+              },
+              "initial"                 : null,
+              "interval"                : {
+                "value"                 : 2,
+                "retry"                 : 1
+              },
+              "max_attempts"            : 3,
+              "passive"                 : null,
+              "perfdata"                : null,
+              "period"                  : null
             },
-            "3d"                    : {
-              "x"                   : null,
-              "y"                   : null,
-              "z"                   : null
-            }
-          },
-          "initial_state"           : "up",
-          "file"                    : {
-            "alternate"             : null,
-            "image"                 : null,
-            "statusmap"             : null,
-            "vrml"                  : null
+            "contacts"                  : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "contact_groups"            : [
+              {
+                "enable"                : null,
+                "name"                  : null
+              }
+            ],
+            "enable"                    : true,
+            "event_handler"             : {
+              "enable"                  : true,
+              "name"                    : null
+            },
+            "flap_detection"            : {
+              "enable"                  : true,
+              "options"                 : {
+                "down"                  : true,
+                "operational"           : true,
+                "unreachable"           : true
+              },
+              "threshold"               : {
+                "high"                  : null,
+                "low"                   : null
+              }
+            },
+            "hostgroups"                : [
+              {
+                "enable"                : true,
+                "name"                  : "network-routers"
+              }
+            ],
+            "icon"                      : {
+              "coordinates"             : {
+                "2d"                    : {
+                  "x"                   : null,
+                  "y"                   : null
+                },
+                "3d"                    : {
+                  "x"                   : null,
+                  "y"                   : null,
+                  "z"                   : null
+                }
+              },
+              "initial_state"           : "up",
+              "file"                    : {
+                "alternate"             : null,
+                "image"                 : null,
+                "statusmap"             : null,
+                "vrml"                  : null
+              }
+            },
+            "name"                      : {
+              "display"                 : null,
+              "string"                  : "network-routers"
+            },
+            "notes"                     : {
+              "string"                  : null,
+              "url"                     : null
+            },
+            "notification"              : {
+              "enable"                  : true,
+              "first_delay"             : null,
+              "interval"                : 120,
+              "options"                 : {
+                "down"                  : true,
+                "flapping"              : false,
+                "recovery"              : true,
+                "none"                  : false,
+                "scheduled_down"        : false,
+                "unreachable"           : true
+              },
+              "period"                  : "24x7"
+            },
+            "obsess"                    : null,
+            "parents"                   : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "retain"                    : {
+              "nonstatus"               : true,
+              "status"                  : true
+            },
+            "stalking"                  : {
+              "down"                    : false,
+              "operational"             : false,
+              "up"                      : false
+            },
+            "use"                       : null
           }
-        },
-        "name"                      : {
-          "display"                 : null,
-          "string"                  : "network-routers"
-        },
-        "notes"                     : {
-          "string"                  : null,
-          "url"                     : null
-        },
-        "notification"              : {
-          "enable"                  : true,
-          "first_delay"             : null,
-          "interval"                : 120,
-          "options"                 : {
-            "down"                  : true,
-            "flapping"              : false,
-            "recovery"              : true,
-            "none"                  : false,
-            "scheduled_down"        : false,
-            "unreachable"           : true
-          },
-          "period"                  : "24x7"
-        },
-        "obsess"                    : null,
-        "parents"                   : [
-          {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "retain"                    : {
-          "nonstatus"               : true,
-          "status"                  : true
-        },
-        "stalking"                  : {
-          "down"                    : false,
-          "operational"             : false,
-          "up"                      : false
-        },
-        "use"                       : null
+        ]
       },
       {
-        "_note"                     : "oci-data",
-        "action_url"                : null,
-        "address"                   : null,
-        "check"                     : {
-          "active"                  : null,
-          "command"                 : null,
-          "freshness"               : {
-            "enable"                : false,
-            "threshold"             : null
-          },
-          "initial"                 : null,
-          "interval"                : {
-            "value"                 : null,
-            "retry"                 : 1
-          },
-          "max_attempts"            : null,
-          "passive"                 : null,
-          "perfdata"                : null,
-          "period"                  : null
-        },
-        "contacts"                  : [
-          {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "contact_groups"            : [
-          {
-            "enable"                : null,
-            "name"                  : null
-          }
-        ],
         "enable"                    : true,
-        "event_handler"             : {
-          "enable"                  : true,
-          "name"                    : null
-        },
-        "flap_detection"            : {
-          "enable"                  : true,
-          "options"                 : {
-            "down"                  : true,
-            "operational"           : true,
-            "unreachable"           : true
-          },
-          "threshold"               : {
-            "high"                  : null,
-            "low"                   : null
-          }
-        },
-        "hostgroups"                : [
+        "iac"                       : [],
+        "ops"                       : [
           {
-            "enable"                : true,
-            "name"                  : "oci-data"
-          }
-        ],
-        "icon"                      : {
-          "coordinates"             : {
-            "2d"                    : {
-              "x"                   : null,
-              "y"                   : 2
+            "_note"                     : "oci-data",
+            "action_url"                : null,
+            "address"                   : null,
+            "check"                     : {
+              "active"                  : null,
+              "command"                 : null,
+              "freshness"               : {
+                "enable"                : false,
+                "threshold"             : null
+              },
+              "initial"                 : null,
+              "interval"                : {
+                "value"                 : null,
+                "retry"                 : 1
+              },
+              "max_attempts"            : null,
+              "passive"                 : null,
+              "perfdata"                : null,
+              "period"                  : null
             },
-            "3d"                    : {
-              "x"                   : null,
-              "y"                   : null,
-              "z"                   : null
-            }
-          },
-          "initial_state"           : "up",
-          "file"                    : {
-            "alternate"             : null,
-            "image"                 : null,
-            "statusmap"             : null,
-            "vrml"                  : null
+            "contacts"                  : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "contact_groups"            : [
+              {
+                "enable"                : null,
+                "name"                  : null
+              }
+            ],
+            "enable"                    : true,
+            "event_handler"             : {
+              "enable"                  : true,
+              "name"                    : null
+            },
+            "flap_detection"            : {
+              "enable"                  : true,
+              "options"                 : {
+                "down"                  : true,
+                "operational"           : true,
+                "unreachable"           : true
+              },
+              "threshold"               : {
+                "high"                  : null,
+                "low"                   : null
+              }
+            },
+            "hostgroups"                : [
+              {
+                "enable"                : true,
+                "name"                  : "oci-data"
+              }
+            ],
+            "icon"                      : {
+              "coordinates"             : {
+                "2d"                    : {
+                  "x"                   : null,
+                  "y"                   : 2
+                },
+                "3d"                    : {
+                  "x"                   : null,
+                  "y"                   : null,
+                  "z"                   : null
+                }
+              },
+              "initial_state"           : "up",
+              "file"                    : {
+                "alternate"             : null,
+                "image"                 : null,
+                "statusmap"             : null,
+                "vrml"                  : null
+              }
+            },
+            "name"                      : {
+              "display"                 : null,
+              "string"                  : "generic-host"
+            },
+            "notes"                     : {
+              "string"                  : null,
+              "url"                     : null
+            },
+            "notification"              : {
+              "enable"                  : true,
+              "first_delay"             : null,
+              "interval"                : 120,
+              "options"                 : {
+                "down"                  : false,
+                "flapping"              : false,
+                "recovery"              : false,
+                "none"                  : false,
+                "scheduled_down"        : false,
+                "unreachable"           : false
+              },
+              "period"                  : "24x7"
+            },
+            "obsess"                    : null,
+            "parents"                   : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "retain"                    : {
+              "nonstatus"               : true,
+              "status"                  : true
+            },
+            "stalking"                  : {
+              "down"                    : false,
+              "operational"             : false,
+              "up"                      : false
+            },
+            "use"                       : "cloud-infrastructure"
           }
-        },
-        "name"                      : {
-          "display"                 : null,
-          "string"                  : "generic-host"
-        },
-        "notes"                     : {
-          "string"                  : null,
-          "url"                     : null
-        },
-        "notification"              : {
-          "enable"                  : true,
-          "first_delay"             : null,
-          "interval"                : 120,
-          "options"                 : {
-            "down"                  : false,
-            "flapping"              : false,
-            "recovery"              : false,
-            "none"                  : false,
-            "scheduled_down"        : false,
-            "unreachable"           : false
-          },
-          "period"                  : "24x7"
-        },
-        "obsess"                    : null,
-        "parents"                   : [
-          {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "retain"                    : {
-          "nonstatus"               : true,
-          "status"                  : true
-        },
-        "stalking"                  : {
-          "down"                    : false,
-          "operational"             : false,
-          "up"                      : false
-        },
-        "use"                       : "cloud-infrastructure"
+        ]
       },
       {
-        "_note"                     : "windows-server",
-        "action_url"                : null,
-        "address"                   : null,
-        "check"                     : {
-          "active"                  : null,
-          "command"                 : "check-host-alive",
-          "freshness"               : {
-            "enable"                : false,
-            "threshold"             : null
-          },
-          "initial"                 : null,
-          "interval"                : {
-            "value"                 : 5,
-            "retry"                 : 1
-          },
-          "max_attempts"            : 10,
-          "passive"                 : null,
-          "perfdata"                : null,
-          "period"                  : 120
-        },
-        "contacts"                  : [
-          {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "contact_groups"            : [
-          {
-            "enable"                : false,
-            "name"                  : "admins"
-          }
-        ],
         "enable"                    : true,
-        "event_handler"             : {
-          "enable"                  : true,
-          "name"                    : null
-        },
-        "flap_detection"            : {
-          "enable"                  : true,
-          "options"                 : {
-            "down"                  : false,
-            "operational"           : false,
-            "unreachable"           : false
-          },
-          "threshold"               : {
-            "high"                  : null,
-            "low"                   : null
-          }
-        },
-        "hostgroups"                : [
+        "iac"                       : [],
+        "ops"                       : [
           {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "icon"                      : {
-          "coordinates"             : {
-            "2d"                    : {
-              "x"                   : null,
-              "y"                   : null
+            "_note"                     : "windows-server",
+            "action_url"                : null,
+            "address"                   : null,
+            "check"                     : {
+              "active"                  : null,
+              "command"                 : "check-host-alive",
+              "freshness"               : {
+                "enable"                : false,
+                "threshold"             : null
+              },
+              "initial"                 : null,
+              "interval"                : {
+                "value"                 : 5,
+                "retry"                 : 1
+              },
+              "max_attempts"            : 10,
+              "passive"                 : null,
+              "perfdata"                : null,
+              "period"                  : 120
             },
-            "3d"                    : {
-              "x"                   : null,
-              "y"                   : null,
-              "z"                   : null
-            }
-          },
-          "initial_state"           : null,
-          "file"                    : {
-            "alternate"             : null,
-            "image"                 : null,
-            "statusmap"             : null,
-            "vrml"                  : null
+            "contacts"                  : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "contact_groups"            : [
+              {
+                "enable"                : false,
+                "name"                  : "admins"
+              }
+            ],
+            "enable"                    : true,
+            "event_handler"             : {
+              "enable"                  : true,
+              "name"                    : null
+            },
+            "flap_detection"            : {
+              "enable"                  : true,
+              "options"                 : {
+                "down"                  : false,
+                "operational"           : false,
+                "unreachable"           : false
+              },
+              "threshold"               : {
+                "high"                  : null,
+                "low"                   : null
+              }
+            },
+            "hostgroups"                : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "icon"                      : {
+              "coordinates"             : {
+                "2d"                    : {
+                  "x"                   : null,
+                  "y"                   : null
+                },
+                "3d"                    : {
+                  "x"                   : null,
+                  "y"                   : null,
+                  "z"                   : null
+                }
+              },
+              "initial_state"           : null,
+              "file"                    : {
+                "alternate"             : null,
+                "image"                 : null,
+                "statusmap"             : null,
+                "vrml"                  : null
+              }
+            },
+            "name"                      : {
+              "display"                 : null,
+              "string"                  : "windows-server"
+            },
+            "notes"                     : {
+              "string"                  : null,
+              "url"                     : null
+            },
+            "notification"              : {
+              "enable"                  : true,
+              "first_delay"             : null,
+              "interval"                : 120,
+              "options"                 : {
+                "down"                  : true,
+                "flapping"              : false,
+                "recovery"              : true,
+                "none"                  : false,
+                "scheduled_down"        : false,
+                "unreachable"           : true
+              },
+              "period"                  : "workhours"
+            },
+            "obsess"                    : null,
+            "parents"                   : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "retain"                    : {
+              "nonstatus"               : true,
+              "status"                  : true
+            },
+            "stalking"                  : {
+              "down"                    : false,
+              "operational"             : false,
+              "up"                      : false
+            },
+            "use"                       : "generic-host"
           }
-        },
-        "name"                      : {
-          "display"                 : null,
-          "string"                  : "windows-server"
-        },
-        "notes"                     : {
-          "string"                  : null,
-          "url"                     : null
-        },
-        "notification"              : {
-          "enable"                  : true,
-          "first_delay"             : null,
-          "interval"                : 120,
-          "options"                 : {
-            "down"                  : true,
-            "flapping"              : false,
-            "recovery"              : true,
-            "none"                  : false,
-            "scheduled_down"        : false,
-            "unreachable"           : true
-          },
-          "period"                  : "workhours"
-        },
-        "obsess"                    : null,
-        "parents"                   : [
-          {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "retain"                    : {
-          "nonstatus"               : true,
-          "status"                  : true
-        },
-        "stalking"                  : {
-          "down"                    : false,
-          "operational"             : false,
-          "up"                      : false
-        },
-        "use"                       : "generic-host"
+        ]
       }
     ],
     "hostgroups"                    : [
