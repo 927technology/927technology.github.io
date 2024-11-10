@@ -1952,28 +1952,34 @@
     ],
     "hostgroups"                    : [
       {
-        "action_url"                : null,
         "enable"                    : true,
-        "hostgroups"                : [
+        "iac"                       : [],
+        "ops"                       : [
           {
-            "enable"                : false,
-            "name"                  : null
+            "action_url"                : null,
+            "enable"                    : true,
+            "hostgroups"                : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "members"                   : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "name"                      : {
+              "display"                 : "All Hosts",
+              "string"                  : "hostgroup-all"
+            },
+            "notes"                     : {
+              "string"                  : null,
+              "url"                     : null
+            }     
           }
-        ],
-        "members"                   : [
-          {
-            "enable"                : false,
-            "name"                  : null
-          }
-        ],
-        "name"                      : {
-          "display"                 : "All Hosts",
-          "string"                  : "hostgroup-all"
-        },
-        "notes"                     : {
-          "string"                  : null,
-          "url"                     : null
-        }     
+        ]
       }
     ],
     "services"                      : [
