@@ -209,6 +209,10 @@
               {
                 "enable"            : true,
                 "name"              : "oci-data"
+              },
+              {
+                "enable"            : true,
+                "name"              : "cloud-iac"
               }
             ],
             "icon"                  : {
