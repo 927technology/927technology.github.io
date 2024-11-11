@@ -230,8 +230,8 @@
               }
             },
             "name"                  : {
-              "display"             : "Oracle Cloud Infrastructure",
-              "string"              : "oci-cloud"
+              "display"             : "Apex - Covid19",
+              "string"              : "covid-19-apex"
             },
             "notes"                 : {
               "string"              : null,
