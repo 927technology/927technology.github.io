@@ -130,13 +130,13 @@
         "enable"                    : true,
         "iac"                       : [
           {
-            "note"                  : "/covid-19-apex",
+            "_note"                 : "/927",
             "depth"                 : 1,
-            "description"           : "apex compartment",
+            "description"           : "927 Tenant",
             "enable"                : true,
             "enable_delete"         : false,
-            "name"                  : "covid-19-apex",
-            "label"                 : "covid-19-apex",
+            "name"                  : "927_tenant-cmp",
+            "label"                 : "927_tenant-cmp",
             "parent"                : {
               "label"               : "root",
               "foreign"             : {
@@ -234,8 +234,8 @@
               }
             },
             "name"                  : {
-              "display"             : "Apex - Covid19",
-              "string"              : "covid-19-apex"
+              "display"             : "Compartment - 927 Tenant",
+              "string"              : "compartment-927_tenant"
             },
             "notes"                 : {
               "string"              : null,
