@@ -276,6 +276,7 @@
   ],
   "hostgroups"                      : [
     {
+      "_note"                       : "servers-linux",
       "enable"                      : true,
       "iac"                         : [],
       "ops"                         : [
@@ -306,6 +307,7 @@
       ]
     },
     {
+      "_note"                       : "network-printers",
       "enable"                      : true,
       "iac"                         : [],
       "ops"                         : [
@@ -336,6 +338,7 @@
       ]
     },
     {
+      "_note"                       : "cloud-infrastructure",
       "enable"                      : true,
       "iac"                         : [],
       "ops"                         : [
@@ -366,6 +369,7 @@
       ]
     },
     {
+      "_note"                       : "oci-data",
       "enable"                      : true,
       "iac"                         : [],
 
@@ -386,8 +390,8 @@
             }
           ],
           "name"                      : {
-            "display"                 : "Cloud - Infrastructure",
-            "string"                  : "cloud-infrastructure"
+            "display"                 : "Data - OCI",
+            "string"                  : "oci-data"
           },
           "notes"                     : {
             "string"                  : null,
