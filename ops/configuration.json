@@ -649,7 +649,8 @@
   ],
   "serviceescalations"              : [
     {
-      "enable"                      : true,
+      "_note"                       : "broken",
+      "enable"                      : false,
       "iac"                         : [],
       "ops"                         : [
         {
@@ -678,7 +679,7 @@
             }
           },
           "first_notification"          : null,
-          "host"                        : {
+          "name"                        : {
             "string"                    : null
           },
           "hostgroups"                  : [
