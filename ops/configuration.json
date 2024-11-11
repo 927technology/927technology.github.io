@@ -560,6 +560,37 @@
       ]
     },
     {
+      "_note"                       : "cloud-iac",
+      "enable"                      : true,
+      "iac"                         : [],
+      "ops"                         : [
+        {
+          "action_url"                : null,
+          "enable"                    : true,
+          "hostgroups"                : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "members"                   : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "name"                      : {
+            "display"                 : "Cloud - IAC",
+            "string"                  : "cloud-iac"
+          },
+          "notes"                     : {
+            "string"                  : null,
+            "url"                     : null
+          }     
+        }
+      ]
+    },
+    {
       "_note"                       : "oci-data",
       "enable"                      : true,
       "iac"                         : [],
@@ -713,6 +744,123 @@
     }
   ],
   "services"                        : [
+    {
+      "enable"                      : true,
+      "iac"                         : [],
+      "ops"                         : [
+        {
+          "action_url"                : null,
+          "check"                     : {
+            "active"                  : null,
+            "command"                 : "927-echo",
+            "freshness"               : {
+              "enable"                : false,
+              "threshold"             : null
+            },
+            "initial"                 : null,
+            "interval"                : {
+              "check"                 : null,
+              "retry"                 : 1
+            },
+            "max_attempts"            : 10,
+            "passive"                 : null,
+            "perfdata"                : true,
+            "period"                  : null
+          },
+          "contacts"                  : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "contact_groups"            : [
+            {
+              "enable"                : null,
+              "name"                  : null
+            }
+          ],
+          "enable"                    : true,
+          "event_handler"             : {
+            "enable"                  : true,
+            "name"                    : null
+          },
+          "flap_detection"            : {
+            "enable"                  : true,
+            "options"                 : {
+              "ok"                    : true,
+              "critical"              : true,
+              "unknown"               : true,
+              "warning"               : true
+            },
+            "threshold"               : {
+              "high"                  : null,
+              "low"                   : null
+            }
+          },
+          "hosts"                     : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "hostgroups"                : [
+            {
+              "enable"                : true,
+              "name"                  : "cloud-iac"
+            }
+          ],
+          "icon"                      : {
+            "file"                    : {
+              "alternate"             : null,
+              "image"                 : null
+            }
+          },
+          "is_volatile"               : false,
+          "name"                      : {
+            "display"                 : "IAC - Config",
+            "string"                  : "config-iac"
+          },
+          "notes"                     : {
+            "string"                  : null,
+            "url"                     : null
+          },
+          "notification"              : {
+            "enable"                  : false,
+            "first_delay"             : null,
+            "interval"                : 120,
+            "options"                 : {
+              "critical"              : false,
+              "flapping"              : false,
+              "recovery"              : true,
+              "scheduled_down"        : true,
+              "unknown"               : true,
+              "warning"               : false
+            },
+            "period"                  : "24x7"
+          },
+          "obsess"                    : null,
+          "retain"                    : {
+            "nonstatus"               : true,
+            "status"                  : true
+          },
+          "servicegroups"             : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "stalking"                  : {
+            "critical"                : true,
+            "ok"                      : true,
+            "unknown"                 : true,
+            "warning"                 : true
+          },
+          "use"                       : "local-service"
+        }
+      ]
+    },
+
+
     {
       "enable"                      : true,
       "iac"                         : [],
