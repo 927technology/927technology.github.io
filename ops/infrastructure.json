@@ -130,32 +130,39 @@
         "enable"                    : true,
         "iac"                       : [
           {
-            "_note"                 : "/927",
-            "depth"                 : 1,
-            "description"           : "927 Tenant",
-            "enable"                : true,
-            "enable_delete"         : false,
-            "name"                  : "927 Tenant",
-            "label"                 : "927_tenant",
-            "parent"                : {
-              "label"               : "root",
-              "foreign"             : {
-                "enable"            : false,
-                "et"                : null,
-                "flock"             : null,
-                "phase"             : null,
-                "project"           : null
-              }
+            "configuration"           : {
+              "_note"                 : "/927",
+              "depth"                 : 1,
+              "description"           : "927 Tenant",
+              "enable"                : true,
+              "enable_delete"         : false,
+              "name"                  : "927 Tenant",
+              "label"                 : "927_tenant",
+              "parent"                : {
+                "label"               : "root",
+                "foreign"             : {
+                  "enable"            : false,
+                  "et"                : null,
+                  "flock"             : null,
+                  "phase"             : null,
+                  "project"           : null
+                }
+              },
+              "prefix"                : [],
+              "suffix"                : [
+                                          "cmp"
+              ],
+              "tags"                  : {
+                "defined"             : {},
+                "freeform"            : {}
+              },
+              "telemetry_alarms"      : []
             },
-            "prefix"                : [],
-            "suffix"                : [
-                                        "cmp"
-            ],
-            "tags"                  : {
-              "defined"             : {},
-              "freeform"            : {}
-            },
-            "telemetry_alarms"      : []
+            "placement"             : {
+              "execution_target"    : "iad",
+              "tenancy"             : "cmurray",
+              "tenant"              : "927"
+            }
           }
         ],
         "ops"                       : [
@@ -281,32 +288,39 @@
         "enable"                    : true,
         "iac"                       : [
           {
-            "_note"                 : "/rtfm",
-            "depth"                 : 1,
-            "description"           : "RTFM Tenant",
-            "enable"                : true,
-            "enable_delete"         : false,
-            "name"                  : "RTFM Tenant",
-            "label"                 : "rtfm_tenant",
-            "parent"                : {
-              "label"               : "root",
-              "foreign"             : {
-                "enable"            : false,
-                "et"                : null,
-                "flock"             : null,
-                "phase"             : null,
-                "project"           : null
-              }
+            "configuration"         : {
+              "_note"                 : "/rtfm",
+              "depth"                 : 1,
+              "description"           : "RTFM Tenant",
+              "enable"                : true,
+              "enable_delete"         : false,
+              "name"                  : "RTFM Tenant",
+              "label"                 : "rtfm_tenant",
+              "parent"                : {
+                "label"               : "root",
+                "foreign"             : {
+                  "enable"            : false,
+                  "et"                : null,
+                  "flock"             : null,
+                  "phase"             : null,
+                  "project"           : null
+                }
+              },
+              "prefix"                : [],
+              "suffix"                : [
+                                          "cmp"
+              ],
+              "tags"                  : {
+                "defined"             : {},
+                "freeform"            : {}
+              },
+              "telemetry_alarms"      : []
             },
-            "prefix"                : [],
-            "suffix"                : [
-                                        "cmp"
-            ],
-            "tags"                  : {
-              "defined"             : {},
-              "freeform"            : {}
-            },
-            "telemetry_alarms"      : []
+            "placement"             : {
+              "execution_target"    : "iad",
+              "tenancy"             : "cmurray",
+              "tenant"              : "rtfm"
+            }
           }
         ],
         "ops"                       : [
