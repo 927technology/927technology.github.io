@@ -22,7 +22,7 @@
           "name"                        : {
             "string"                    : "927-echo"
           },
-          "line"                        : "/bin/echo $_HOSTIAC$"
+          "line"                        : "/bin/echo $_HOSTIAC$ | sed 's/\"\\\"/g'"
         }
       ]
     },
