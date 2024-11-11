@@ -22,7 +22,7 @@
           "name"                        : {
             "string"                    : "927-echo"
           },
-          "line"                        : "/bin/echo \"$_HOSTIAC$\" | jq -c"
+          "line"                        : "/bin/echo $_HOSTIAC$"
         }
       ]
     },
