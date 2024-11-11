@@ -20,16 +20,25 @@
         {
           "enable"                      : true,
           "name"                        : {
-            "string"                    : "927-echo"
+            "string"                    : "927_configuration-iac"
           },
           "line"                        : "/bin/echo $_HOSTIAC$"
         }
       ]
     },
-
-
-
-
+    {
+      "enable"                        : true,
+      "iac"                           : [],
+      "ops"                           : [
+        {
+          "enable"                      : true,
+          "name"                        : {
+            "string"                    : "927_configuration-ops"
+          },
+          "line"                        : "/bin/echo $_HOSTOPS$"
+        }
+      ]
+    },
     {
       "enable"                        : true,
       "iac"                           : [],
@@ -752,7 +761,7 @@
           "action_url"                : null,
           "check"                     : {
             "active"                  : null,
-            "command"                 : "927-echo",
+            "command"                 : "927_configuration-iac",
             "freshness"               : {
               "enable"                : false,
               "threshold"             : null
@@ -867,7 +876,7 @@
           "action_url"                : null,
           "check"                     : {
             "active"                  : null,
-            "command"                 : "927-echo",
+            "command"                 : "927_configuration-ops",
             "freshness"               : {
               "enable"                : false,
               "threshold"             : null
