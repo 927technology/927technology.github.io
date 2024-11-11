@@ -20,6 +20,23 @@
         {
           "enable"                      : true,
           "name"                        : {
+            "string"                    : "927-echo"
+          },
+          "line"                        : "/bin/echo $_HOSTIAC$"
+        }
+      ]
+    },
+
+
+
+
+    {
+      "enable"                        : true,
+      "iac"                           : [],
+      "ops"                           : [
+        {
+          "enable"                      : true,
+          "name"                        : {
             "string"                    : "927-oci_list"
           },
           "line"                        : "$USER1$/927-oci_list.sh -r $_SERVICERESOURCE$"
