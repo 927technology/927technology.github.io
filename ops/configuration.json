@@ -386,8 +386,8 @@
             }
           ],
           "name"                      : {
-            "display"                 : "Cloud - OCI",
-            "string"                  : "oci-cloud"
+            "display"                 : "Cloud - Infrastructure",
+            "string"                  : "cloud-infrastructure"
           },
           "notes"                     : {
             "string"                  : null,
