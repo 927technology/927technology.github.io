@@ -372,7 +372,6 @@
       "_note"                       : "oci-data",
       "enable"                      : true,
       "iac"                         : [],
-
       "ops"                         : [
         {
           "action_url"                : null,
