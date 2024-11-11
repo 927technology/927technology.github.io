@@ -135,8 +135,8 @@
             "description"           : "927 Tenant",
             "enable"                : true,
             "enable_delete"         : false,
-            "name"                  : "927_tenant-cmp",
-            "label"                 : "927_tenant-cmp",
+            "name"                  : "927 Tenant",
+            "label"                 : "927_tenant",
             "parent"                : {
               "label"               : "root",
               "foreign"             : {
@@ -148,7 +148,9 @@
               }
             },
             "prefix"                : [],
-            "suffix"                : [],
+            "suffix"                : [
+                                        "cmp"
+            ],
             "tags"                  : {
               "defined"             : {},
               "freeform"            : {}
@@ -236,6 +238,157 @@
             "name"                  : {
               "display"             : "Compartment - 927 Tenant",
               "string"              : "compartment-927_tenant"
+            },
+            "notes"                 : {
+              "string"              : null,
+              "url"                 : null
+            },
+            "notification"          : {
+              "enable"              : true,
+              "first_delay"         : null,
+              "interval"            : 120,
+              "options"             : {
+                "down"              : false,
+                "flapping"          : false,
+                "recovery"          : false,
+                "none"              : false,
+                "scheduled_down"    : false,
+                "unreachable"       : false
+              },
+              "period"              : "24x7"
+            },
+            "obsess"                : null,
+            "parents"               : [
+              {
+                "enable"            : false,
+                "name"              : null
+              }
+            ],
+            "retain"                : {
+              "nonstatus"           : true,
+              "status"              : true
+            },
+            "stalking"              : {
+              "down"                : true,
+              "operational"         : true,
+              "up"                  : true
+            },
+            "use"                   : "cloud-infrastructure"
+          }
+        ]
+      },
+      {
+        "enable"                    : true,
+        "iac"                       : [
+          {
+            "_note"                 : "/rtfm",
+            "depth"                 : 1,
+            "description"           : "RTFM Tenant",
+            "enable"                : true,
+            "enable_delete"         : false,
+            "name"                  : "RTFM Tenant",
+            "label"                 : "rtfm_tenant",
+            "parent"                : {
+              "label"               : "root",
+              "foreign"             : {
+                "enable"            : false,
+                "et"                : null,
+                "flock"             : null,
+                "phase"             : null,
+                "project"           : null
+              }
+            },
+            "prefix"                : [],
+            "suffix"                : [
+                                        "cmp"
+            ],
+            "tags"                  : {
+              "defined"             : {},
+              "freeform"            : {}
+            },
+            "telemetry_alarms"      : []
+          }
+        ],
+        "ops"                       : [
+          {
+            "action_url"            : null,
+            "address"               : null,
+            "check"                 : {
+              "active"              : null,
+              "command"             : null,
+              "freshness"           : {
+                "enable"            : false,
+                "threshold"         : null
+              },
+              "initial"             : null,
+              "interval"            : {
+                "check"             : 5,
+                "retry"             : 1
+              },
+              "max_attempts"        : 3,
+              "passive"             : null,
+              "perfdata"            : true,
+              "period"              : null
+            },
+            "contacts"              : [
+              {
+                "enable"            : false,
+                "name"              : null
+              }
+            ],
+            "contact_groups"        : [
+              {
+                "enable"            : null,
+                "name"              : null
+              }
+            ],
+            "event_handler"         : {
+              "enable"              : true,
+              "name"                : null
+            },
+            "flap_detection"        : {
+              "enable"              : true,
+              "options"             : {
+                "down"              : true,
+                "operational"       : true,
+                "unreachable"       : true
+              },
+              "threshold"           : {
+                "high"              : null,
+                "low"               : null
+              }
+            },
+            "hostgroups"            : [
+              {
+                "enable"            : true,
+                "name"              : "oci-data"
+              },
+              {
+                "enable"            : true,
+                "name"              : "cloud-iac"
+              }
+            ],
+            "icon"                  : {
+              "coordinates"         : {
+                "2d"                : {
+                  "x"               : null,
+                  "y"               : null
+                },
+                "3d"                : {
+                  "x"               : null,
+                  "y"               : null,
+                  "z"               : null
+                }
+              },
+              "file"                : {
+                "alternate"         : null,
+                "image"             : null,
+                "vrml"              : null
+              }
+            },
+            "name"                  : {
+              "display"             : "Compartment - RTFM Tenant",
+              "string"              : "compartment-rtfm_tenant"
             },
             "notes"                 : {
               "string"              : null,
