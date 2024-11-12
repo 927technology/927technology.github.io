@@ -162,7 +162,7 @@
               "execution_target"    : "infra",
               "region"              : "iad",
               "tenancy"             : "cmurray",
-              "tennant"              : "927"
+              "tennant"             : "927"
             }
           }
         ],
@@ -321,7 +321,7 @@
               "execution_target"    : "infra",
               "region"              : "iad",
               "tenancy"             : "cmurray",
-              "tennant"              : "927"
+              "tennant"             : "rtfm"
             }
           }
         ],
@@ -480,7 +480,7 @@
               "execution_target"    : "infra",
               "region"              : "iad",
               "tenancy"             : "cmurray",
-              "tennant"              : "927"
+              "tennant"             : "kittay"
             }
           }
         ],
@@ -610,7 +610,7 @@
             "configuration"         : {
               "_note"                 : "/frito",
               "depth"                 : 1,
-              "description"           : "Kittay Tennant",
+              "description"           : "Frito Tennant",
               "enable"                : true,
               "enable_delete"         : false,
               "name"                  : "Frito Tennant",
@@ -639,7 +639,7 @@
               "execution_target"    : "infra",
               "region"              : "iad",
               "tenancy"             : "cmurray",
-              "tennant"              : "927"
+              "tennant"             : "frito"
             }
           }
         ],
