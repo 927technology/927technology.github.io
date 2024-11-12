@@ -159,7 +159,8 @@
               "telemetry_alarms"      : []
             },
             "placement"             : {
-              "execution_target"    : "iad",
+              "execution_target"    : "infra",
+              "region"              : "iad",
               "tenancy"             : "cmurray",
               "tenant"              : "927"
             }
@@ -317,9 +318,10 @@
               "telemetry_alarms"      : []
             },
             "placement"             : {
-              "execution_target"    : "iad",
+              "execution_target"    : "infra",
+              "region"              : "iad",
               "tenancy"             : "cmurray",
-              "tenant"              : "rtfm"
+              "tenant"              : "927"
             }
           }
         ],
@@ -475,9 +477,10 @@
               "telemetry_alarms"      : []
             },
             "placement"             : {
-              "execution_target"    : "iad",
+              "execution_target"    : "infra",
+              "region"              : "iad",
               "tenancy"             : "cmurray",
-              "tenant"              : "kittay"
+              "tenant"              : "927"
             }
           }
         ],
@@ -633,9 +636,10 @@
               "telemetry_alarms"      : []
             },
             "placement"             : {
-              "execution_target"    : "iad",
+              "execution_target"    : "infra",
+              "region"              : "iad",
               "tenancy"             : "cmurray",
-              "tenant"              : "frito"
+              "tenant"              : "927"
             }
           }
         ],
