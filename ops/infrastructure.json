@@ -8,6 +8,7 @@
       {
         "_note"                     : "Tenancy - cmurray(oci)",
         "enable"                    : true,
+        "name"                      : "cmurray",
         "iac"                       : [],
         "ops"                       : [
           {
