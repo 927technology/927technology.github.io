@@ -476,6 +476,71 @@
   ],
   "hostgroups"                      : [
     {
+      "_note"                       : "cloud-tenancy",
+      "enable"                      : true,
+      "iac"                         : [],
+      "ops"                         : [
+        {
+          "action_url"              : null,
+          "enable"                  : true,
+          "hostgroups"              : [
+            {
+              "enable"              : false,
+              "name"                : null
+            }
+          ],
+          "members"                 : [
+            {
+              "enable"              : true,
+              "name"                : "cloud-oci_cmurray"
+            }
+          ],
+          "name"                    : {
+            "display"               : "Cloud - Tenancy",
+            "string"                : "cloud-tenancy"
+          },
+          "notes"                   : {
+            "string"                : null,
+            "url"                   : null
+          },
+          "use"                     : "template-hostgroups_cloud"
+        }
+      ]
+    },
+    {
+      "_note"                       : "cloud-tennant",
+      "enable"                      : true,
+      "iac"                         : [],
+      "ops"                         : [
+        {
+          "action_url"              : null,
+          "enable"                  : true,
+          "hostgroups"              : [
+            {
+              "enable"              : false,
+              "name"                : null
+            }
+          ],
+          "members"                 : [
+            {
+              "enable"              : true,
+              "name"                : "compartment-cmurray/927"
+            }
+          ],
+          "name"                    : {
+            "display"               : "Cloud - Tennant",
+            "string"                : "cloud-tennant"
+          },
+          "notes"                   : {
+            "string"                : null,
+            "url"                   : null
+          },
+          "use"                     : "template-hostgroups_cloud"
+        }
+      ]
+    },
+
+    {
       "_note"                       : "servers-linux",
       "enable"                      : true,
       "iac"                         : [],
@@ -1394,6 +1459,130 @@
       }
     ],
     "hosts"                         : [
+      {
+        "enable"                    : true,
+        "iac"                       : [],
+        "ops"                       : [
+          {
+            "_note"                     : "template-host_cloud",
+            "action_url"                : null,
+            "address"                   : null,
+            "check"                     : {
+              "active"                  : null,
+              "command"                 : "927-always_alive",
+              "freshness"               : {
+                "enable"                : false,
+                "threshold"             : null
+              },
+              "initial"                 : null,
+              "interval"                : {
+                "value"                 : 5,
+                "retry"                 : 1
+              },
+              "max_attempts"            : 10,
+              "passive"                 : null,
+              "perfdata"                : null,
+              "period"                  : "24x7"
+            },
+            "contacts"                  : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "contact_groups"            : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "enable"                    : true,
+            "event_handler"             : {
+              "enable"                  : true,
+              "name"                    : null
+            },
+            "flap_detection"            : {
+              "enable"                  : true,
+              "options"                 : {
+                "down"                  : false,
+                "operational"           : false,
+                "unreachable"           : false
+              },
+              "threshold"               : {
+                "high"                  : null,
+                "low"                   : null
+              }
+            },
+            "hostgroups"                : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "icon"                      : {
+              "coordinates"             : {
+                "2d"                    : {
+                  "x"                   : null,
+                  "y"                   : null
+                },
+                "3d"                    : {
+                  "x"                   : null,
+                  "y"                   : null,
+                  "z"                   : null
+                }
+              },
+              "initial_state"           : null,
+              "file"                    : {
+                "alternate"             : null,
+                "image"                 : null,
+                "statusmap"             : null,
+                "vrml"                  : null
+              }
+            },
+            "name"                      : {
+              "display"                 : "Template - Host Cloud",
+              "string"                  : "template-host_cloud"
+            },
+            "notes"                     : {
+              "string"                  : null,
+              "url"                     : null
+            },
+            "notification"              : {
+              "enable"                  : true,
+              "first_delay"             : null,
+              "interval"                : 120,
+              "options"                 : {
+                "down"                  : true,
+                "flapping"              : false,
+                "recovery"              : true,
+                "none"                  : false,
+                "scheduled_down"        : false,
+                "unreachable"           : true
+              },
+              "period"                  : "24x7"
+            },
+            "obsess"                    : null,
+            "parents"                   : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "retain"                    : {
+              "nonstatus"               : true,
+              "status"                  : true
+            },
+            "stalking"                  : {
+              "down"                    : false,
+              "operational"             : false,
+              "up"                      : false
+            },
+            "use"                       : null
+          }
+        ]
+      },
+
+
       {
         "enable"                    : true,
         "iac"                       : [],
@@ -2377,6 +2566,26 @@
         "iac"                       : [],
         "ops"                       : [
           {
+            "action_url"            : null,
+            "enable"                : true,
+            "name"                  : {
+              "display"             : "Template - Hostgroup Cloud",
+              "string"              : "template-hostgroups_cloud"
+            },
+            "notes"                 : {
+              "string"              : null,
+              "url"                 : null
+            }     
+          }
+        ]
+      },
+
+
+      {
+        "enable"                    : true,
+        "iac"                       : [],
+        "ops"                       : [
+          {
             "action_url"                : null,
             "enable"                    : true,
             "hostgroups"                : [
@@ -2404,6 +2613,126 @@
       }
     ],
     "services"                      : [
+
+
+      {
+        "enable"                    : true,
+        "iac"                       : [],
+        "ops"                       : [
+          {
+            "_note"                 : "template-service_compartment",
+            "action_url"            : null,
+            "check"                 : {
+              "active"              : true,
+              "command"             : "927_configuration-ops",
+              "freshness"           : {
+                "enable"            : true,
+                "threshold"         : null
+              },
+              "initial"             : null,
+              "interval"            : {
+                "check"             : 10,
+                "retry"             : 2
+              },
+              "max_attempts"        : 3,
+              "passive"             : true,
+              "perfdata"            : true,
+              "period"              : "24x7"
+            },
+            "contacts"              : [
+              {
+                "enable"            : false,
+                "name"              : null
+              }
+            ],
+            "contact_groups"        : [
+              {
+                "enable"            : null,
+                "name"              : null
+              }
+            ],
+            "enable"                : true,
+            "event_handler"         : {
+              "enable"              : true,
+              "name"                : null
+            },
+            "flap_detection"        : {
+              "enable"              : true,
+              "options"             : {
+                "down"              : true,
+                "operational"       : true,
+                "unreachable"       : true
+              },
+              "threshold"           : {
+                "high"              : null,
+                "low"               : null
+              }
+            },
+            "hosts"                 : [
+              {
+                "enable"            : false,
+                "name"              : null
+              }
+            ],
+            "hostgroups"            : [
+              {
+                "enable"            : false,
+                "name"              : null
+              }
+            ],
+            "icon"                  : {
+              "file"                : {
+                "alternate"         : null,
+                "image"             : null
+              }
+            },
+            "is_volatile"           : false,
+            "name"                  : {
+              "display"             : "Template - Service Compartment",
+              "string"              : "template-service_compartment"
+            },
+            "notes"                 : {
+              "string"              : null,
+              "url"                 : null
+            },
+            "notification"          : {
+              "enable"              : true,
+              "first_delay"         : null,
+              "interval"            : 60,
+              "options"             : {
+                "critical"          : true,
+                "flapping"          : false,
+                "recovery"          : false,
+                "scheduled_down"    : false,
+                "unknown"           : true,
+                "warning"           : true
+              },
+              "period"              : "24x7"
+            },
+            "obsess"                : true,
+            "retain"                : {
+              "nonstatus"           : true,
+              "status"              : true
+            },
+            "servicegroups"         : [
+              {
+                "enable"            : false,
+                "name"              : null
+              }
+            ],
+            "stalking"              : {
+              "critical"            : false,
+              "ok"                  : false,
+              "unknown"             : false,
+              "warning"             : false
+            },
+            "use"                   : null
+          }
+        ]
+      },
+
+
+
       {
         "enable"                      : true,
         "iac"                         : [],
@@ -2518,7 +2847,8 @@
             "use"                       : null
           }
         ]
-      },    {
+      },    
+      {
         "enable"                      : true,
         "iac"                         : [],
         "ops"                         : [
