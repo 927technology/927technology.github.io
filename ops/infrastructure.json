@@ -43,6 +43,10 @@
               {
                 "enable"            : false,
                 "name"              : "test"
+              },
+              {
+                "enable"            : false,
+                "name"              : "test2"
               }
             ],
             "use"                   : "template-host_cloud"
