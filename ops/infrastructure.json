@@ -42,7 +42,7 @@
             "parents"               : [
               {
                 "enable"            : false,
-                "name"              : null
+                "name"              : "test"
               }
             ],
             "use"                   : "template-host_cloud"
