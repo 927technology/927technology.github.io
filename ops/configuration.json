@@ -524,7 +524,7 @@
           "members"                 : [
             {
               "enable"              : true,
-              "name"                : "cmurray"
+              "name"                : "cloud-oci_cmurray"
             }
           ],
           "name"                    : {
