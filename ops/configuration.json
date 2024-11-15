@@ -673,6 +673,10 @@
         }
       ]
     },
+
+
+
+
     {
       "_note"                       : "cloud-iac",
       "enable"                      : true,
@@ -708,6 +712,49 @@
         }
       ]
     },
+
+    {
+      "_note"                       : "cloud-ops",
+      "enable"                      : true,
+      "iac"                         : [],
+      "ops"                         : [
+        {
+          "action_url"                : null,
+          "enable"                    : true,
+          "hostgroups"                : [
+            {
+              "enable"                : true,
+              "name"                  : "cloud-tenancy"
+            },
+            {
+              "enable"                : true,
+              "name"                  : "cloud-tenancy_cmurray"
+            }
+          ],
+          "members"                   : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "name"                      : {
+            "display"                 : "Cloud - OPS",
+            "string"                  : "cloud-ops"
+          },
+          "notes"                     : {
+            "string"                  : null,
+            "url"                     : null
+          }     
+        }
+      ]
+    },
+
+
+
+
+
+
+
     {
       "_note"                       : "oci-data",
       "enable"                      : true,
