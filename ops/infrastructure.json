@@ -57,6 +57,44 @@
             "_note"                 : "Tennant - cmurray/927",
             "enable"                : true,
             "name"                  : "cmurray/927",
+            "ops"                       : [
+              {
+                "enable"                : true,
+                "event_handler"         : {
+                  "enable"              : true,
+                  "name"                : null
+                },
+                "icon"                  : {
+                  "coordinates"             : {
+                    "2d"                    : {
+                      "x"                   : null,
+                      "y"                   : null
+                    },
+                    "3d"                    : {
+                      "x"                   : null,
+                      "y"                   : null,
+                      "z"                   : null
+                    }
+                  },
+                  "file"                    : {
+                    "alternate"             : null,
+                    "image"                 : null,
+                    "vrml"                  : null
+                  }
+                },
+                "name"                  : {
+                  "display"             : "Tenant - cmurray/927",
+                  "string"              : "tenant-cmurray_927"
+                },
+                "parents"               : [
+                  {
+                    "enable"            : "true",
+                    "name"              : "cloud-oci_cmurray"
+                  }
+                ],
+                "use"                   : "template-host_cloud"
+              }
+            ],
             "provider"              : "oci",
             "resources"             : [
               {
@@ -367,6 +405,44 @@
             "_note"                 : "Tennant - cmurray/kittay",
             "enable"                : true,
             "name"                  : "cmurray/kittay",
+            "ops"                       : [
+              {
+                "enable"                : true,
+                "event_handler"         : {
+                  "enable"              : true,
+                  "name"                : null
+                },
+                "icon"                  : {
+                  "coordinates"             : {
+                    "2d"                    : {
+                      "x"                   : null,
+                      "y"                   : null
+                    },
+                    "3d"                    : {
+                      "x"                   : null,
+                      "y"                   : null,
+                      "z"                   : null
+                    }
+                  },
+                  "file"                    : {
+                    "alternate"             : null,
+                    "image"                 : null,
+                    "vrml"                  : null
+                  }
+                },
+                "name"                  : {
+                  "display"             : "Tenant - cmurray/kittay",
+                  "string"              : "tenant-cmurray_kittay"
+                },
+                "parents"               : [
+                  {
+                    "enable"            : "true",
+                    "name"              : "cloud-oci_cmurray"
+                  }
+                ],
+                "use"                   : "template-host_cloud"
+              }
+            ],
             "provider"              : "oci",
             "resources"             : []
           },
@@ -374,6 +450,44 @@
             "_note"                 : "Tennant - cmurray/rtfm",
             "enable"                : true,
             "name"                  : "cmurray/rtfm",
+            "ops"                       : [
+              {
+                "enable"                : true,
+                "event_handler"         : {
+                  "enable"              : true,
+                  "name"                : null
+                },
+                "icon"                  : {
+                  "coordinates"             : {
+                    "2d"                    : {
+                      "x"                   : null,
+                      "y"                   : null
+                    },
+                    "3d"                    : {
+                      "x"                   : null,
+                      "y"                   : null,
+                      "z"                   : null
+                    }
+                  },
+                  "file"                    : {
+                    "alternate"             : null,
+                    "image"                 : null,
+                    "vrml"                  : null
+                  }
+                },
+                "name"                  : {
+                  "display"             : "Tenant - cmurray/rtfm",
+                  "string"              : "tenant-cmurray_rtfm"
+                },
+                "parents"               : [
+                  {
+                    "enable"            : "true",
+                    "name"              : "cloud-oci_cmurray"
+                  }
+                ],
+                "use"                   : "template-host_cloud"
+              }
+            ],
             "provider"              : "oci",
             "resources"             : []
           }
