@@ -547,7 +547,6 @@
         }
       ]
     },
-
     {
       "_note"                       : "servers-linux",
       "enable"                      : true,
@@ -651,8 +650,12 @@
           "enable"                    : true,
           "hostgroups"                : [
             {
-              "enable"                : false,
-              "name"                  : null
+              "enable"                : true,
+              "name"                  : "cloud-tenancy"
+            },
+            {
+              "enable"                : true,
+              "name"                  : "cloud-tenancy_chmurray"
             }
           ],
           "members"                   : [
