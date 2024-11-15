@@ -508,7 +508,7 @@
       ]
     },
     {
-      "_note"                       : "cloud-tennant",
+      "_note"                       : "cloud-tenancy_cmurray",
       "enable"                      : true,
       "iac"                         : [],
       "ops"                         : [
@@ -524,12 +524,20 @@
           "members"                 : [
             {
               "enable"              : true,
-              "name"                : "cloud-oci_cmurray"
+              "name"                : "tenant-cmurray_927"
+            },
+            {
+              "enable"              : true,
+              "name"                : "tenant-cmurray_kittay"
+            },
+            {
+              "enable"              : true,
+              "name"                : "tenant-cmurray_rtfm"
             }
           ],
           "name"                    : {
-            "display"               : "Cloud - Tennant",
-            "string"                : "cloud-tennant"
+            "display"               : "Cloud - Tenancy (cmurray)",
+            "string"                : "cloud-tenancy_cmurray"
           },
           "notes"                   : {
             "string"                : null,
