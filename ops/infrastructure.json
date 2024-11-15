@@ -52,7 +52,7 @@
             "use"                   : "template-host_cloud"
           }
         ],
-        "tennant"                   : [
+        "tennants"                  : [
           {
             "_note"                 : "Tennant - cmurray/927 tennant",
             "enable"                : true,
