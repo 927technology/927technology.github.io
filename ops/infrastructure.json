@@ -54,8 +54,9 @@
         ],
         "tennants"                  : [
           {
-            "_note"                 : "Tennant - cmurray/927 tennant",
+            "_note"                 : "Tennant - cmurray/927",
             "enable"                : true,
+            "name"                  : "cmurray/927",
             "provider"              : "oci",
             "resources"             : [
               {
@@ -361,6 +362,20 @@
                 "type"              : "vcn"
               }
             ]
+          },
+          {
+            "_note"                 : "Tennant - cmurray/kittay",
+            "enable"                : true,
+            "name"                  : "cmurray/kittay",
+            "provider"              : "oci",
+            "resources"             : []
+          },
+          {
+            "_note"                 : "Tennant - cmurray/rtfm",
+            "enable"                : true,
+            "name"                  : "cmurray/rtfm",
+            "provider"              : "oci",
+            "resources"             : []
           }
         ]
       }
