@@ -14,8 +14,10 @@
       ]
     },
     {
+      "_note"                         : "927_configuration-iac",
       "enable"                        : true,
       "iac"                           : [],
+      "name"                          : "927_configuration-iac",
       "ops"                           : [
         {
           "enable"                      : true,
@@ -26,6 +28,37 @@
         }
       ]
     },
+
+
+
+
+
+    {
+      "_note"                         : "927_configuration-ops",
+      "enable"                        : true,
+      "iac"                           : [],
+      "name"                          : "927_configuration-ops",
+      "ops"                           : [
+        {
+          "enable"                      : true,
+          "name"                        : {
+            "string"                    : "927_configuration-ops"
+          },
+          "line"                        : "/bin/echo $_HOSTOPS$"
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
     {
       "enable"                        : true,
       "iac"                           : [],
@@ -830,8 +863,10 @@
   ],
   "services"                        : [
     {
+      "_note"                       : "config-iac",
       "enable"                      : true,
       "iac"                         : [],
+      "name"                        : "config-iac",
       "ops"                         : [
         {
           "action_url"                : null,
@@ -943,7 +978,134 @@
           "use"                       : "local-service"
         }
       ]
+    },
+
+
+
+    {
+      "_note"                       : "config-ops",
+      "enable"                      : true,
+      "iac"                         : [],
+      "name"                        : "config-ops",
+      "ops"                         : [
+        {
+          "action_url"                : null,
+          "check"                     : {
+            "active"                  : null,
+            "command"                 : "927_configuration-ops",
+            "freshness"               : {
+              "enable"                : false,
+              "threshold"             : null
+            },
+            "initial"                 : null,
+            "interval"                : {
+              "check"                 : null,
+              "retry"                 : 1
+            },
+            "max_attempts"            : 10,
+            "passive"                 : null,
+            "perfdata"                : true,
+            "period"                  : null
+          },
+          "contacts"                  : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "contact_groups"            : [
+            {
+              "enable"                : null,
+              "name"                  : null
+            }
+          ],
+          "enable"                    : true,
+          "event_handler"             : {
+            "enable"                  : true,
+            "name"                    : null
+          },
+          "flap_detection"            : {
+            "enable"                  : true,
+            "options"                 : {
+              "ok"                    : true,
+              "critical"              : true,
+              "unknown"               : true,
+              "warning"               : true
+            },
+            "threshold"               : {
+              "high"                  : null,
+              "low"                   : null
+            }
+          },
+          "hosts"                     : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "hostgroups"                : [
+            {
+              "enable"                : true,
+              "name"                  : "cloud-ops"
+            }
+          ],
+          "icon"                      : {
+            "file"                    : {
+              "alternate"             : null,
+              "image"                 : null
+            }
+          },
+          "is_volatile"               : false,
+          "name"                      : {
+            "display"                 : "Ops - Config",
+            "string"                  : "config-ops"
+          },
+          "notes"                     : {
+            "string"                  : null,
+            "url"                     : null
+          },
+          "notification"              : {
+            "enable"                  : false,
+            "first_delay"             : null,
+            "interval"                : 120,
+            "options"                 : {
+              "critical"              : false,
+              "flapping"              : false,
+              "recovery"              : true,
+              "scheduled_down"        : true,
+              "unknown"               : true,
+              "warning"               : false
+            },
+            "period"                  : "24x7"
+          },
+          "obsess"                    : null,
+          "retain"                    : {
+            "nonstatus"               : true,
+            "status"                  : true
+          },
+          "servicegroups"             : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "stalking"                  : {
+            "critical"                : true,
+            "ok"                      : true,
+            "unknown"                 : true,
+            "warning"                 : true
+          },
+          "use"                       : "local-service"
+        }
+      ]
     }
+
+
+
+
+
+
+
   ],
   "servicegroups"                 : [
     {
