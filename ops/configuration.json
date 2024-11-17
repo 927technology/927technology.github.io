@@ -25,7 +25,7 @@
           "name"                    : {
             "string"                : "927-enumerate_compartments"
           },
-          "line"                    : "$USER1$/927-enumerate.sh -h $_HOSTNAME -r compartments  -s config-iac"
+          "line"                    : "$USER1$/927-enumerate.sh -h $_HOSTNAME$ -r compartments  -s config-iac"
         }
       ]
     },
