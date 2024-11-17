@@ -512,7 +512,7 @@
       "_note"                       : "cloud-tenancy",
       "enable"                      : true,
       "iac"                         : [],
-      "ops"                         : [
+      "ops"                         : [null
         {
           "action_url"              : null,
           "enable"                  : true,
@@ -593,7 +593,7 @@
           "hostgroups"              : [
             {
               "enable"              : true,
-              "name"                : "cloud-tenancy_cmurray"
+              "name"                : "cloud-tenancy"
             }
           ],
           "members"                 : [],
