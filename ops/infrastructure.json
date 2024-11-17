@@ -58,7 +58,34 @@
             "enable"                : true,
             "iac"                   : [
               {
-                "name"              : "cmurray/927"
+                "compartments"        : [
+                  {
+                    "note": "/Management-Agents",
+                    "depth": 1,
+                    "description": "This compartment was automatically created when you set up ingestion for logging analytics.",
+                    "enable": true,
+                    "enable_delete": false,
+                    "name": "Management-Agents",
+                    "label": "Management-Agents",
+                    "parent": {
+                      "label": "root",
+                      "foreign": {
+                        "enable": false,
+                        "et": null,
+                        "flock": null,
+                        "phase": null,
+                        "project": null
+                      }
+                    },
+                    "prefix": [],
+                    "suffix": [],
+                    "tags": {
+                      "defined": {},
+                      "freeform": {}
+                    },
+                    "telemetry_alarms": []
+                  }
+                ]
               }
             ],
             "name"                  : "cmurray/927",

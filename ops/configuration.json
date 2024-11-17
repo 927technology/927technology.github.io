@@ -673,10 +673,6 @@
         }
       ]
     },
-
-
-
-
     {
       "_note"                       : "cloud-iac",
       "enable"                      : true,
@@ -712,7 +708,6 @@
         }
       ]
     },
-
     {
       "_note"                       : "cloud-ops",
       "enable"                      : true,
@@ -748,13 +743,6 @@
         }
       ]
     },
-
-
-
-
-
-
-
     {
       "_note"                       : "oci-data",
       "enable"                      : true,
@@ -1154,7 +1142,7 @@
 
 
   ],
-  "servicegroups"                 : [
+  "servicegroups"                   : [
     {
       "enable"                      : true,
       "iac"                         : [],
