@@ -594,6 +594,10 @@
             {
               "enable"              : true,
               "name"                : "cloud-tenancy"
+            },
+            {
+              "enable"              : true,
+              "name"                : "cloud-tenancy_cmurray"
             }
           ],
           "members"                 : [],
