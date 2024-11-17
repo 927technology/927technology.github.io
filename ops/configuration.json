@@ -512,7 +512,7 @@
       "_note"                       : "cloud-tenancy",
       "enable"                      : true,
       "iac"                         : [],
-      "ops"                         : [null
+      "ops"                         : [
         {
           "action_url"              : null,
           "enable"                  : true,
