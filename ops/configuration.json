@@ -580,6 +580,38 @@
         }
       ]
     },
+
+
+    {
+      "_note"                       : "cloud-oci",
+      "enable"                      : true,
+      "iac"                         : [],
+      "ops"                         : [
+        {
+          "action_url"              : null,
+          "enable"                  : true,
+          "hostgroups"              : [
+            {
+              "enable"              : true,
+              "name"                : "cloud-tenancy_cmurray"
+            }
+          ],
+          "members"                 : [],
+          "name"                    : {
+            "display"               : "Cloud - OCI",
+            "string"                : "cloud-oci"
+          },
+          "notes"                   : {
+            "string"                : null,
+            "url"                   : null
+          },
+          "use"                     : "template-hostgroups_cloud"
+        }
+      ]
+    },
+
+
+
     {
       "_note"                       : "servers-linux",
       "enable"                      : true,
@@ -1322,6 +1354,7 @@
     ],
     "hosts"                         : [
       {
+        "_note"                     : "template-host_cloud",
         "enable"                    : true,
         "iac"                       : [],
         "ops"                       : [
@@ -2424,6 +2457,7 @@
     ],
     "hostgroups"                    : [
       {
+        "_note"                     : "template-hostgroups_cloud",
         "enable"                    : true,
         "iac"                       : [],
         "ops"                       : [
@@ -2441,9 +2475,8 @@
           }
         ]
       },
-
-
       {
+        "_note"                     : "hostgroup-all", 
         "enable"                    : true,
         "iac"                       : [],
         "ops"                       : [
@@ -2475,8 +2508,6 @@
       }
     ],
     "services"                      : [
-
-
       {
         "enable"                    : true,
         "iac"                       : [],
@@ -2592,9 +2623,6 @@
           }
         ]
       },
-
-
-
       {
         "enable"                      : true,
         "iac"                         : [],
