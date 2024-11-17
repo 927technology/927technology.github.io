@@ -1242,6 +1242,10 @@
             {
               "enable"                : true,
               "name"                  : "cloud-oci"
+            },
+            {
+              "enable"                : true,
+              "name"                  : "!cloud-tenancy"
             }
           ],
           "icon"                      : {

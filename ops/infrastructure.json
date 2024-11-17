@@ -470,11 +470,7 @@
           {
             "_note"                 : "Tennant - cmurray/kittay",
             "enable"                : true,
-            "iac"                   : [
-              {
-                "name"              : "cmurray/kittay"
-              }
-            ],
+            "iac"                   : [],
             "name"                  : "cmurray/kittay",
             "ops"                       : [
               {
@@ -520,11 +516,7 @@
           {
             "_note"                 : "Tennant - cmurray/rtfm",
             "enable"                : true,
-            "iac"                   : [
-              {
-                "name"              : "cmurray/rtfm"
-              }
-            ],
+            "iac"                   : [],
             "name"                  : "cmurray/rtfm",
             "ops"                       : [
               {
