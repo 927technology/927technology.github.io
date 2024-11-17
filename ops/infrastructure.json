@@ -60,13 +60,13 @@
               {
                 "compartments"        : [
                   {
-                    "note": "/Management-Agents",
+                    "note": "/927_root",
                     "depth": 1,
-                    "description": "This compartment was automatically created when you set up ingestion for logging analytics.",
+                    "description": "Root compartment for 927 tennant",
                     "enable": true,
                     "enable_delete": false,
-                    "name": "Management-Agents",
-                    "label": "Management-Agents",
+                    "name": "927",
+                    "label": "927",
                     "parent": {
                       "label": "root",
                       "foreign": {
