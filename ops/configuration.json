@@ -1,18 +1,39 @@
 {
   "commands"                        : [
     {
-      "enable"                        : true,
-      "iac"                           : [],
-      "ops"                           : [
+      "_note"                       : "927-always_alive",
+      "enable"                      : true,
+      "iac"                         : [],
+      "ops"                         : [
         {
-          "enable"                      : true,
-          "name"                        : {
-            "string"                    : "927-always_alive"
+          "enable"                  : true,
+          "name"                    : {
+            "string"                : "927-always_alive"
           },
-          "line"                        : "$USER1$/927-always_alive.sh"
+          "line"                    : "$USER1$/927-always_alive.sh"
         }
       ]
     },
+    
+    {
+      "_note"                       : "927-enumerate_compartments",
+      "enable"                      : true,
+      "iac"                         : [],
+      "ops"                         : [
+        {
+          "enable"                  : true,
+          "name"                    : {
+            "string"                : "927-enumerate_compartments"
+          },
+          "line"                    : "$USER1$/927-enumerate.sh -h $_HOSTNAME -r compartments  -s config-iac"
+        }
+      ]
+    },
+
+
+
+
+
     {
       "_note"                         : "927_configuration-iac",
       "enable"                        : true,
@@ -28,11 +49,6 @@
         }
       ]
     },
-
-
-
-
-
     {
       "_note"                         : "927_configuration-ops",
       "enable"                        : true,
@@ -48,17 +64,6 @@
         }
       ]
     },
-
-
-
-
-
-
-
-
-
-
-
     {
       "enable"                        : true,
       "iac"                           : [],
@@ -1169,9 +1174,128 @@
           "use"                       : "local-service"
         }
       ]
+    },
+
+
+    {
+      "_note"                       : "oci-iac_compartments",
+      "enable"                      : true,
+      "iac"                         : [],
+      "name"                        : "oci-iac_compartments",
+      "ops"                         : [
+        {
+          "action_url"                : null,
+          "check"                     : {
+            "active"                  : null,
+            "command"                 : "927-enumerate_compartments",
+            "freshness"               : {
+              "enable"                : false,
+              "threshold"             : null
+            },
+            "initial"                 : null,
+            "interval"                : {
+              "check"                 : null,
+              "retry"                 : 1
+            },
+            "max_attempts"            : 10,
+            "passive"                 : null,
+            "perfdata"                : true,
+            "period"                  : null
+          },
+          "contacts"                  : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "contact_groups"            : [
+            {
+              "enable"                : null,
+              "name"                  : null
+            }
+          ],
+          "enable"                    : true,
+          "event_handler"             : {
+            "enable"                  : true,
+            "name"                    : null
+          },
+          "flap_detection"            : {
+            "enable"                  : true,
+            "options"                 : {
+              "ok"                    : true,
+              "critical"              : true,
+              "unknown"               : true,
+              "warning"               : true
+            },
+            "threshold"               : {
+              "high"                  : null,
+              "low"                   : null
+            }
+          },
+          "hosts"                     : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "hostgroups"                : [
+            {
+              "enable"                : true,
+              "name"                  : "cloud-oci"
+            }
+          ],
+          "icon"                      : {
+            "file"                    : {
+              "alternate"             : null,
+              "image"                 : null
+            }
+          },
+          "is_volatile"               : false,
+          "name"                      : {
+            "display"                 : "OCI - IAC Compartments",
+            "string"                  : "oci-iac_compartments"
+          },
+          "notes"                     : {
+            "string"                  : null,
+            "url"                     : null
+          },
+          "notification"              : {
+            "enable"                  : false,
+            "first_delay"             : null,
+            "interval"                : 120,
+            "options"                 : {
+              "critical"              : false,
+              "flapping"              : false,
+              "recovery"              : true,
+              "scheduled_down"        : true,
+              "unknown"               : true,
+              "warning"               : false
+            },
+            "period"                  : "24x7"
+          },
+          "obsess"                    : null,
+          "retain"                    : {
+            "nonstatus"               : true,
+            "status"                  : true
+          },
+          "servicegroups"             : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "stalking"                  : {
+            "critical"                : true,
+            "ok"                      : true,
+            "unknown"                 : true,
+            "warning"                 : true
+          },
+          "use"                       : "local-service"
+        }
+      ]
     }
 
-
+    
 
 
 
