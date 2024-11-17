@@ -85,6 +85,40 @@
                     },
                     "telemetry_alarms": []
                   }
+                ],
+                "drgs"                : [
+                  {
+                    "_note"           : "example",
+                    "attachments"     : [
+                      {
+                        "_note"       : "example",
+                        "resource"    : {
+                          "foreign"   : false,
+                          "label"     : "example",
+                          "type"      : "vcn"
+                        },
+                        "enable"      : false,
+                        "name"        : "example",
+                        "tags"        : {
+                          "defined"   : {},
+                          "freeform"  : {}
+                        }
+                      }
+                    ],
+                    "compartment"     : {
+                      "foreign"       : false,
+                      "label"         : "example"
+                    },
+                    "enable"          : false,
+                    "label"           : "example",
+                    "name"            : "example",
+                    "prefix"          : [],
+                    "suffix"          : [],
+                    "tags"            : {
+                      "defined"       : {},
+                      "freeform"      : {}
+                    }
+                  }
                 ]
               }
             ],
