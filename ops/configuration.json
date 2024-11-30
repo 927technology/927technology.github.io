@@ -1316,7 +1316,7 @@
       "_note"                       : "oci_compartments",
       "enable"                      : true,
       "iac"                         : [],
-      "name"                        : "oci-iac_compartments",
+      "name"                        : "oci-compartments",
       "ops"                         : [
         {
           "action_url"                : null,
