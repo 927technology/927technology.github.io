@@ -24,7 +24,7 @@
           "name"                    : {
             "string"                : "927-oci_compartments"
           },
-          "line"                    : "$USER1$/927-oci.sh -p cmurray -r compartments"
+          "line"                    : "$USER1$/927-oci.sh -p ops-ms -r compartments"
         }
       ]
     },
