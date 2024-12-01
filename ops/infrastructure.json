@@ -9,7 +9,15 @@
         "_note"                     : "Tenancy - cmurray(oci)",
         "enable"                    : true,
         "name"                      : "cmurray",
-        "iac"                       : [],
+        "iac"                       : [
+          {
+            "_note"                 : "Tenancy - chmurray(oci)",
+            "cloud"                 : {
+              "provider"            : "oci",
+              "config"              : "ops-ms"
+            }
+          }
+        ],
         "ops"                       : [
           {
             "enable"                : true,
