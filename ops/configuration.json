@@ -1190,10 +1190,10 @@
 
 
     {
-      "_note"                       : "oci-iac_compartments",
+      "_note"                       : "iac_compartments",
       "enable"                      : true,
       "iac"                         : [],
-      "name"                        : "oci-iac_compartments",
+      "name"                        : "iac_compartments",
       "ops"                         : [
         {
           "action_url"                : null,
