@@ -47,30 +47,30 @@
       ]
     },
     {
-      "_note"                         : "927_configuration-iac",
+      "_note"                         : "927_iac-configuration",
       "enable"                        : true,
       "iac"                           : [],
-      "name"                          : "927_configuration-iac",
+      "name"                          : "927_iac-configuration",
       "ops"                           : [
         {
           "enable"                      : true,
           "name"                        : {
-            "string"                    : "927_configuration-iac"
+            "string"                    : "927_iac-configuration"
           },
           "line"                        : "/bin/echo $_HOSTIAC$"
         }
       ]
     },
     {
-      "_note"                         : "927_configuration-ops",
+      "_note"                         : "927_ops-configuration",
       "enable"                        : true,
       "iac"                           : [],
-      "name"                          : "927_configuration-ops",
+      "name"                          : "927_ops-configuration",
       "ops"                           : [
         {
           "enable"                      : true,
           "name"                        : {
-            "string"                    : "927_configuration-ops"
+            "string"                    : "927_ops-configuration"
           },
           "line"                        : "/bin/echo $_HOSTOPS$"
         }
@@ -951,16 +951,16 @@
   ],
   "services"                        : [
     {
-      "_note"                       : "config-iac",
+      "_note"                       : "iac-config",
       "enable"                      : true,
       "iac"                         : [],
-      "name"                        : "config-iac",
+      "name"                        : "iac-config",
       "ops"                         : [
         {
           "action_url"                : null,
           "check"                     : {
             "active"                  : null,
-            "command"                 : "927_configuration-iac",
+            "command"                 : "927_iac-configuration",
             "freshness"               : {
               "enable"                : false,
               "threshold"             : null
@@ -1026,7 +1026,7 @@
           "is_volatile"               : false,
           "name"                      : {
             "display"                 : "IAC - Config",
-            "string"                  : "config-iac"
+            "string"                  : "iac-config"
           },
           "notes"                     : {
             "string"                  : null,
@@ -1071,10 +1071,10 @@
 
 
     {
-      "_note"                       : "config-ops",
+      "_note"                       : "ops-config",
       "enable"                      : true,
       "iac"                         : [],
-      "name"                        : "config-ops",
+      "name"                        : "ops-config",
       "ops"                         : [
         {
           "action_url"                : null,
@@ -1146,7 +1146,7 @@
           "is_volatile"               : false,
           "name"                      : {
             "display"                 : "Ops - Config",
-            "string"                  : "config-ops"
+            "string"                  : "ops-config"
           },
           "notes"                     : {
             "string"                  : null,
