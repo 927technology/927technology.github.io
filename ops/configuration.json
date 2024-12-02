@@ -33,7 +33,7 @@
 
 
     {
-      "_note"                       : "927-enumerate_compartments",
+      "_note"                       : "927-livestatus_get",
       "enable"                      : true,
       "iac"                         : [],
       "ops"                         : [
@@ -42,7 +42,7 @@
           "name"                    : {
             "string"                : "927-enumerate_compartments"
           },
-          "line"                    : "$USER1$/927-enumerate.sh -h $HOSTNAME$ -r compartments  -s iac-config"
+          "line"                    : "$USER1$/927-livestatus_get.sh -h $HOSTNAME$ -r compartments  -s iac-config"
         }
       ]
     },
