@@ -1268,8 +1268,8 @@
           },
           "is_volatile"               : false,
           "name"                      : {
-            "display"                 : "OCI - IAC Compartments",
-            "string"                  : "oci-iac_compartments"
+            "display"                 : "IAC - Compartments",
+            "string"                  : "iac-compartments"
           },
           "notes"                     : {
             "string"                  : null,
