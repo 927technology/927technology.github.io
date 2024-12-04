@@ -22,13 +22,28 @@
         {
           "enable"                  : true,
           "name"                    : {
-            "string"                : "927-oci_compartments"
+            "string"                : "927-infra_compartments"
           },
-          "line"                    : "$USER1$/927-oci.sh -p ops-ms -r compartments"
+          "line"                    : "$USER1$/927-infra.sh --cloud oci --profile ops-ms --resource compartments"
         }
       ]
     },
 
+
+    {
+      "_note"                       : "927-json_diff",
+      "enable"                      : true,
+      "iac"                         : [],
+      "ops"                         : [
+        {
+          "enable"                  : true,
+          "name"                    : {
+            "string"                : "927-json_diff"
+          },
+          "line"                    : "$USER1$/927-json_diff.sh $ARG1$ $ARG2$"
+        }
+      ]
+    },
 
 
 
