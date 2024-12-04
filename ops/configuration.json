@@ -1328,16 +1328,16 @@
 
 
     {
-      "_note"                       : "oci_compartments",
+      "_note"                       : "infra_compartments",
       "enable"                      : true,
       "iac"                         : [],
-      "name"                        : "oci-compartments",
+      "name"                        : "infra-compartments",
       "ops"                         : [
         {
           "action_url"                : null,
           "check"                     : {
             "active"                  : null,
-            "command"                 : "927-oci_compartments",
+            "command"                 : "927-infra_compartments",
             "freshness"               : {
               "enable"                : false,
               "threshold"             : null
@@ -1402,8 +1402,8 @@
           },
           "is_volatile"               : false,
           "name"                      : {
-            "display"                 : "OCI - Compartments",
-            "string"                  : "oci-compartments"
+            "display"                 : "Infra - Compartments",
+            "string"                  : "infra-compartments"
           },
           "notes"                     : {
             "string"                  : null,
