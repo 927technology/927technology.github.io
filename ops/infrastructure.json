@@ -504,7 +504,38 @@
           {
             "_note"                 : "Tennant - cmurray/kittay",
             "enable"                : true,
-            "iac"                   : [],
+            "iac"                   : [
+              {
+                "compartments"        : [
+                  {
+                    "note": "/kittay",
+                    "depth": 1,
+                    "description": "Root compartment for kittay tennant",
+                    "enable": true,
+                    "enable_delete": false,
+                    "name": "kittay",
+                    "label": "kittay-root",
+                    "parent": {
+                      "label": "root",
+                      "foreign": {
+                        "enable": false,
+                        "et": null,
+                        "flock": null,
+                        "phase": null,
+                        "project": null
+                      }
+                    },
+                    "prefix": [],
+                    "suffix": [],
+                    "tags": {
+                      "defined": {},
+                      "freeform": {}
+                    },
+                    "telemetry_alarms": []
+                  }
+                ]
+              }
+            ],
             "name"                  : "cmurray/kittay",
             "ops"                       : [
               {
