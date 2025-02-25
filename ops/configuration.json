@@ -28,6 +28,7 @@
         }
       ]
     },
+    
 
 
     {
@@ -48,7 +49,7 @@
 
 
     {
-      "_note"                       : "927-livestatus_get",
+      "_note"                       : "iac compartments",
       "enable"                      : true,
       "iac"                         : [],
       "ops"                         : [
@@ -61,6 +62,24 @@
         }
       ]
     },
+    {
+      "_note"                       : "iac drgs",
+      "enable"                      : true,
+      "iac"                         : [],
+      "ops"                         : [
+        {
+          "enable"                  : true,
+          "name"                    : {
+            "string"                : "927-enumerate_drgs"
+          },
+          "line"                    : "$USER1$/927-livestatus_get.sh -h $HOSTNAME$ -r drgs  -s iac-config"
+        }
+      ]
+    },
+
+
+
+
     {
       "_note"                         : "927_iac-configuration",
       "enable"                        : true,
@@ -1327,6 +1346,130 @@
     },
 
 
+
+    {
+      "_note"                       : "iac_drgs",
+      "enable"                      : true,
+      "iac"                         : [],
+      "name"                        : "iac_drgs",
+      "ops"                         : [
+        {
+          "action_url"                : null,
+          "check"                     : {
+            "active"                  : null,
+            "command"                 : "927-enumerate_drgs",
+            "freshness"               : {
+              "enable"                : false,
+              "threshold"             : null
+            },
+            "initial"                 : null,
+            "interval"                : {
+              "check"                 : null,
+              "retry"                 : 1
+            },
+            "max_attempts"            : 10,
+            "passive"                 : null,
+            "perfdata"                : true,
+            "period"                  : null
+          },
+          "contacts"                  : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "contact_groups"            : [
+            {
+              "enable"                : null,
+              "name"                  : null
+            }
+          ],
+          "enable"                    : true,
+          "event_handler"             : {
+            "enable"                  : true,
+            "name"                    : null
+          },
+          "flap_detection"            : {
+            "enable"                  : true,
+            "options"                 : {
+              "ok"                    : true,
+              "critical"              : true,
+              "unknown"               : true,
+              "warning"               : true
+            },
+            "threshold"               : {
+              "high"                  : null,
+              "low"                   : null
+            }
+          },
+          "hosts"                     : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "hostgroups"                : [
+            {
+              "enable"                : true,
+              "name"                  : "cloud-oci"
+            },
+            {
+              "enable"                : true,
+              "name"                  : "!cloud-tenancy"
+            }
+          ],
+          "icon"                      : {
+            "file"                    : {
+              "alternate"             : null,
+              "image"                 : null
+            }
+          },
+          "is_volatile"               : false,
+          "name"                      : {
+            "display"                 : "IAC - DRGs",
+            "string"                  : "iac-drgs"
+          },
+          "notes"                     : {
+            "string"                  : null,
+            "url"                     : null
+          },
+          "notification"              : {
+            "enable"                  : false,
+            "first_delay"             : null,
+            "interval"                : 120,
+            "options"                 : {
+              "critical"              : false,
+              "flapping"              : false,
+              "recovery"              : true,
+              "scheduled_down"        : true,
+              "unknown"               : true,
+              "warning"               : false
+            },
+            "period"                  : "24x7"
+          },
+          "obsess"                    : null,
+          "retain"                    : {
+            "nonstatus"               : true,
+            "status"                  : true
+          },
+          "servicegroups"             : [
+            {
+              "enable"                : false,
+              "name"                  : null
+            }
+          ],
+          "stalking"                  : {
+            "critical"                : true,
+            "ok"                      : true,
+            "unknown"                 : true,
+            "warning"                 : true
+          },
+          "use"                       : "local-service"
+        }
+      ]
+    },
+
+
     {
       "_note"                       : "infra_compartments",
       "enable"                      : true,
@@ -1444,7 +1587,6 @@
         }
       ]
     }
-
     
     
 
