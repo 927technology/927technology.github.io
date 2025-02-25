@@ -68,15 +68,41 @@
               {
                 "compartments"        : [
                   {
-                    "note": "/927_root",
+                    "note": "/927",
                     "depth": 1,
                     "description": "Root compartment for 927 tennant",
                     "enable": true,
                     "enable_delete": false,
                     "name": "927",
-                    "label": "927",
+                    "label": "927-root",
                     "parent": {
                       "label": "root",
+                      "foreign": {
+                        "enable": false,
+                        "et": null,
+                        "flock": null,
+                        "phase": null,
+                        "project": null
+                      }
+                    },
+                    "prefix": [],
+                    "suffix": [],
+                    "tags": {
+                      "defined": {},
+                      "freeform": {}
+                    },
+                    "telemetry_alarms": []
+                  },
+                  {
+                    "note": "/927/network",
+                    "depth": 1,
+                    "description": "Network Compartment for 927 tennant",
+                    "enable": true,
+                    "enable_delete": false,
+                    "name": "927",
+                    "label": "927-network",
+                    "parent": {
+                      "label": "927-root",
                       "foreign": {
                         "enable": false,
                         "et": null,
@@ -702,118 +728,118 @@
         "iac"                       : [],
         "ops"                       : [
           {
-            "action_url"                : null,
-            "address"                   : "192.168.1.250",
-            "check"                     : {
-              "active"                  : null,
-              "command"                 : null,
-              "freshness"               : {
-                "enable"                : false,
-                "threshold"             : null
+            "action_url"            : null,
+            "address"               : "192.168.1.250",
+            "check"                 : {
+              "active"              : null,
+              "command"             : null,
+              "freshness"           : {
+                "enable"            : false,
+                "threshold"         : null
               },
-              "initial"                 : null,
-              "interval"                : {
-                "value"                 : 5,
-                "retry"                 : 1
+              "initial"             : null,
+              "interval"            : {
+                "value"             : 5,
+                "retry"             : 1
               },
-              "max_attempts"            : 3,
-              "passive"                 : null,
-              "perfdata"                : null,
-              "period"                  : null
+              "max_attempts"        : 3,
+              "passive"             : null,
+              "perfdata"            : null,
+              "period"              : null
             },
-            "contacts"                  : [
+            "contacts"              : [
               {
-                "enable"                : false,
-                "name"                  : null
+                "enable"            : false,
+                "name"              : null
               }
             ],
-            "contact_groups"            : [
+            "contact_groups"        : [
               {
-                "enable"                : null,
-                "name"                  : null
+                "enable"            : null,
+                "name"              : null
               }
             ],
-            "event_handler"             : {
-              "enable"                  : true,
-              "name"                    : null
+            "event_handler"         : {
+              "enable"              : true,
+              "name"                : null
             },
-            "flap_detection"            : {
-              "enable"                  : true,
-              "options"                 : {
-                "down"                  : true,
-                "operational"           : true,
-                "unreachable"           : true
+            "flap_detection"        : {
+              "enable"              : true,
+              "options"             : {
+                "down"              : true,
+                "operational"       : true,
+                "unreachable"       : true
               },
-              "threshold"               : {
-                "high"                  : null,
-                "low"                   : null
+              "threshold"           : {
+                "high"              : null,
+                "low"               : null
               }
             },
-            "hostgroups"                : [
+            "hostgroups"            : [
               {
-                "enable"                : true,
-                "name"                  : "servers-linux"
+                "enable"            : true,
+                "name"              : "servers-linux"
               }
             ],
-            "icon"                      : {
-              "coordinates"             : {
-                "2d"                    : {
-                  "x"                   : null,
-                  "y"                   : 2
+            "icon"                  : {
+              "coordinates"         : {
+                "2d"                : {
+                  "x"               : null,
+                  "y"               : 2
                 },
-                "3d"                    : {
-                  "x"                   : null,
-                  "y"                   : null,
-                  "z"                   : null
+                "3d"                : {
+                  "x"               : null,
+                  "y"               : null,
+                  "z"               : null
                 }
               },
-              "initial_state"           : "up",
-              "file"                    : {
-                "alternate"             : null,
-                "image"                 : null,
-                "statusmap"             : null,
-                "vrml"                  : null
+              "initial_state"       : "up",
+              "file"                : {
+                "alternate"         : null,
+                "image"             : null,
+                "statusmap"         : null,
+                "vrml"              : null
               }
             },
-            "name"                      : {
-              "string"                   : "mediaserver",
-              "display"                  : "Media Server"
+            "name"                  : {
+              "string"              : "mediaserver",
+              "display"             : "Media Server"
             },
-            "notes"                     : {
-              "string"                  : null,
-              "url"                     : null
+            "notes"                 : {
+              "string"              : null,
+              "url"                 : null
             },
-            "notification"              : {
-              "enable"                  : true,
-              "first_delay"             : null,
-              "interval"                : 120,
-              "options"                 : {
-                "down"                  : false,
-                "flapping"              : false,
-                "recovery"              : false,
-                "none"                  : false,
-                "scheduled_down"        : false,
-                "unreachable"           : false
+            "notification"          : {
+              "enable"              : true,
+              "first_delay"         : null,
+              "interval"            : 120,
+              "options"             : {
+                "down"              : false,
+                "flapping"          : false,
+                "recovery"          : false,
+                "none"              : false,
+                "scheduled_down"    : false,
+                "unreachable"       : false
               },
-              "period"                  : "24x7"
+              "period"              : "24x7"
             },
-            "obsess"                    : null,
-            "parents"                   : [
+            "obsess"                : null,
+            "parents"               : [
               {
-                "enable"                : false,
-                "name"                  : null
+                "enable"            : false,
+                "name"              : null
               }
             ],
-            "retain"                    : {
-              "nonstatus"               : true,
-              "status"                  : true
+            "retain"                : {
+              "nonstatus"           : true,
+              "status"              : true
             },
-            "stalking"                  : {
-              "down"                    : true,
-              "operational"             : true,
-              "up"                      : true
+            "stalking"              : {
+              "down"                : true,
+              "operational"         : true,
+              "up"                  : true
             },
-            "use"                       : "linux-server"
+            "use"                   : "linux-server"
           }
         ],
         "services"                  : []
