@@ -38,7 +38,7 @@
           "name"                    : {
             "string"                : "927-status_compartments"
           },
-          "line"                    : "$USER1$/927-resource_exists.sh --tenancy $_SERVICETENANCY$ --tenant $HOSTNAME$ --resource compartments"
+          "line"                    : "$USER1$/927-resource_exists.sh --tenancy $_HOSTTENANCY$ --tenant $HOSTNAME$ --resource compartments"
         }
       ]
     },
