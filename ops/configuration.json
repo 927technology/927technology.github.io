@@ -1437,8 +1437,8 @@
           },
           "is_volatile"               : false,
           "name"                      : {
-            "display"                 : "IAC - Compartments",
-            "string"                  : "iac-compartments"
+            "display"                 : "Status - Compartments",
+            "string"                  : "status-compartments"
           },
           "notes"                     : {
             "string"                  : null,
