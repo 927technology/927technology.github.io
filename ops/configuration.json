@@ -24,7 +24,7 @@
           "name"                    : {
             "string"                : "927-infra_compartments"
           },
-          "line"                    : "$USER1$/927-infra.sh --cloud oci --profile ops-ms --resource compartments"
+          "line"                    : "$USER1$/927-infra.sh --provider oci --profile ops-ms --resource compartments"
         }
       ]
     },
