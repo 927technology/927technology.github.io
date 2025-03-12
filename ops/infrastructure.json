@@ -14,7 +14,7 @@
             "_note"                 : "Tenancy - chmurray(oci)",
             "cloud"                 : {
               "provider"            : "oci",
-              "config"              : "oci_cmurray_ops"
+              "config"              : "ops-ms"
             }
           }
         ],
