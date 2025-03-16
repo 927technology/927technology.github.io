@@ -875,6 +875,65 @@
       ]
     }
   ],
+  "jobserver"                       : [
+    {
+      "enable"                      : true,
+      "iac"                         : [],
+      "ops"                         : [
+        {
+          "accept_clear_results"    : false,
+          "connection_timeout"      : -1,
+          "debug"                   : false,
+          "do_hostchecks"           : true,
+          "dupserver"               : {
+            "host"                  : null,
+            "port"                  : null
+          },  
+          "encryption"              : {
+            "enable"                : true,
+            "keyfile"               : "secrets/module.pwd"
+          },
+          "eventhandler"            : true,
+          "id"                      : "1494cee4-37dc-406d-b136-b4ff87a6108d",
+          "log"                     : {
+            "file"                  : "/var/log/mod_gearman/mod_gearman_neb.log",
+            "stats_interval"        : 60
+
+          },
+          "notifications"           : true,
+          "server"                  : {
+            "host"                  : "localhost",
+            "port"                  : 4730
+          },
+          "host"                    : {
+            "enable"                : true,
+            "groups"                : [],
+            "local_groups"          : [],
+            "orphan_checks"         : true
+
+          },
+          "internal_check_dummy"    : true,
+          "latency_flatten_window"  : 30,
+          "orphan_return"           : "critical",
+          "perfdata"                : {
+            "enable"                : false,
+            "send_all"              : false,
+            "mode"                  : 1
+          },
+          "queue_custom_variable"   : "local",
+          "result_workers"          : 1,
+          "route_eventhandler_like_checks": false,
+          "service"                 : {
+            "enable"                : true,
+            "groups"                : [],
+            "local_groups"          : [],
+            "orphan_checks"         : true
+          },
+          "use_uniq_jobs"           : true
+        }
+      ]
+    }
+  ],
   "servicedependancies"             : [
     {
       "enable"                      : true,
