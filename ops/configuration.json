@@ -894,7 +894,7 @@
             "keyfile"               : "secrets/module.pwd"
           },
           "eventhandler"            : true,
-          "id"                      : "1494cee4-37dc-406d-b136-b4ff87a6108d",
+          "id"                      : "b9ac339e-91d2-4420-8461-834214b86c86",
           "log"                     : {
             "file"                  : "/var/log/mod_gearman/mod_gearman_neb.log",
             "stats_interval"        : 60
@@ -3918,7 +3918,7 @@
             "enable"                : true,
             "groups"                : []
           },
-          "id"                      : "b9ac339e-91d2-4420-8461-834214b86c86",
+          "id"                      : "1494cee4-37dc-406d-b136-b4ff87a6108d",
           "load_limit"              : {
             "1"                     : 0,
             "5"                     : 0,
