@@ -901,16 +901,12 @@
 
           },
           "notifications"           : true,
-          "server"                  : {
-            "host"                  : "localhost",
-            "port"                  : 4730
-          },
           "host"                    : {
             "enable"                : true,
             "groups"                : [],
             "local_groups"          : [],
             "orphan_checks"         : true
-
+            
           },
           "internal_check_dummy"    : true,
           "latency_flatten_window"  : 30,
@@ -923,6 +919,10 @@
           "queue_custom_variable"   : "local",
           "result_workers"          : 1,
           "route_eventhandler_like_checks": false,
+          "server"                  : {
+            "host"                  : "localhost",
+            "port"                  : 4730
+          },
           "service"                 : {
             "enable"                : true,
             "groups"                : [],
@@ -3893,5 +3893,75 @@
         }
       ]
     }
+  ],
+  "workerservers"                   : [
+    {
+      "enable"                      : true,
+      "iac"                         : [],
+      "ops"                         : [
+        {
+          "debug"                   : 0,
+          "dupserver"               : {
+            "host"                  : null,
+            "port"                  : null
+          },
+          "dup_results_are_passive" : true,
+          "enable_embedded_perl"    : true,
+          "encryption"              : {
+            "enable"                : true,
+            "key"                   : null,
+            "keyfile"               : "secrets/worker.pwd"
+          },
+          "eventhandler"            : true,
+          "fork_on_exec"            : false,
+          "host"                    : {
+            "enable"                : true,
+            "groups"                : []
+          },
+          "id"                      : "b9ac339e-91d2-4420-8461-834214b86c86",
+          "load_limit"              : {
+            "1"                     : 0,
+            "5"                     : 0,
+            "15"                    : 0
+          },
+          "log"                     : {
+            "file"                  : "/var/log/mod_gearman/mod_gearman_worker.log"
+          },
+          "max"                     : {
+            "age"                   : 0,
+            "jobs"                  : 1000,
+            "worker"                : 50
+          },
+          "min"                     : {
+            "worker"                : 5
+          },
+          "notifications"           : true,
+          "p1_file"                 : "/usr/share/mod_gearman/mod_gearman_p1.pl",
+          "pidfile"                 : "/var/mod_gearman/mod_gearman_worker.pid",
+          "server"                  : {
+            "host"                  : "localhost",
+            "port"                  : 4730
+          },
+          "restrict_command_characters" : "$&();<>`\"'|",
+          "restrict_path"           : "/usr/local/plugins/",
+          "service"                 : {
+            "enable"                : true,
+            "groups"                : []
+          },
+          "show_error_output"       : true,
+          "spawn-rate"              : 1,
+          "timeout"                 : {
+            "gearman_connection"    : 5000,
+            "idle"                  : 30,
+            "job"                   : 60,
+            "return"                : 2
+          },
+          "use_embedded_perl_implicitly" : false,
+          "use_perl_cache"          : true,
+          "workaround_rc_25"        : true
+        }
+      ]
+    }
   ]
+
 }
