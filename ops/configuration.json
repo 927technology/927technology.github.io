@@ -3547,18 +3547,18 @@
               "url"                     : null
             },
             "notification"              : {
-              "enable"                  : true,
+              "enable"                  : null,
               "first_delay"             : null,
-              "interval"                : 120,
+              "interval"                : null,
               "options"                 : {
                 "critical"              : false,
                 "flapping"              : false,
-                "recovery"              : true,
-                "scheduled_down"        : true,
-                "unknown"               : true,
+                "recovery"              : false,
+                "scheduled_down"        : false,
+                "unknown"               : false,
                 "warning"               : false
               },
-              "period"                  : "24x7"
+              "period"                  : null
             },
             "obsess"                    : null,
             "retain"                    : {
