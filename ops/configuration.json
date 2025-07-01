@@ -3236,85 +3236,86 @@
           }
         ]
       },
+
       {
-        "enable"                      : true,
-        "iac"                         : [],
-        "ops"                         : [
+        "enable"                    : true,
+        "iac"                       : [],
+        "ops"                       : [
           {
-            "_note"                     : "generic-service",
-            "action_url"                : null,
-            "check"                     : {
-              "active"                  : true,
-              "command"                 : null,
-              "freshness"               : {
-                "enable"                : true,
-                "threshold"             : null
+            "_note"                 : "generic-service",
+            "action_url"            : null,
+            "check"                 : {
+              "active"              : true,
+              "command"             : "927_configuration-ops",
+              "freshness"           : {
+                "enable"            : true,
+                "threshold"         : null
               },
-              "initial"                 : null,
-              "interval"                : {
-                "check"                 : 10,
-                "retry"                 : 2
+              "initial"             : null,
+              "interval"            : {
+                "check"             : 10,
+                "retry"             : 2
               },
-              "max_attempts"            : 3,
-              "passive"                 : true,
-              "perfdata"                : true,
-              "period"                  : "24x7"
+              "max_attempts"        : 3,
+              "passive"             : true,
+              "perfdata"            : true,
+              "period"              : "24x7"
             },
-            "contacts"                  : [
+            "contacts"              : [
               {
-                "enable"                : false,
-                "name"                  : null
+                "enable"            : false,
+                "name"              : null
               }
             ],
-            "contact_groups"            : [
+            "contact_groups"        : [
               {
-                "enable"                : null,
-                "name"                  : null
+                "enable"            : null,
+                "name"              : null
               }
             ],
-            "enable"                    : true,
-            "event_handler"             : {
-              "enable"                  : true,
-              "name"                    : null
+            "enable"                : true,
+            "event_handler"         : {
+              "enable"              : true,
+              "name"                : null
             },
-            "flap_detection"            : {
-              "enable"                  : true,
-              "options"                 : {
-                "down"                  : true,
-                "operational"           : true,
-                "unreachable"           : true
+            "flap_detection"        : {
+              "enable"              : true,
+              "options"             : {
+                "down"              : true,
+                "operational"       : true,
+                "unreachable"       : true
               },
-              "threshold"               : {
-                "high"                  : null,
-                "low"                   : null
+              "threshold"           : {
+                "high"              : null,
+                "low"               : null
               }
             },
-            "hosts"                     : [
+            "hosts"                 : [
               {
-                "enable"                : false,
-                "name"                  : null
+                "enable"            : false,
+                "name"              : null
               }
             ],
-            "hostgroups"                : [
+            "hostgroups"            : [
               {
-                "enable"                : false,
-                "name"                  : null
+                "enable"            : false,
+                "name"              : null
               }
             ],
-            "icon"                      : {
-              "file"                    : {
-                "alternate"             : null,
-                "image"                 : null
+            "icon"                  : {
+              "file"                : {
+                "alternate"         : null,
+                "image"             : null
               }
             },
-            "is_volatile"               : false,
-            "name"                      : {
-              "display"                 : "Generic Service",
-              "string"                  : "generic-service"
+            "is_volatile"           : false,
+            "name"                  : {
+              "display"             : "Generic Service",
+              "string"              : "generic-service"
             },
-            "notes"                     : {
-              "string"                  : null,
-              "url"                     : null
+            "notes"                 : {
+              "string"              : null,
+              "url"                 : null
             },
             "notification"          : {
               "enable"              : true,
@@ -3330,27 +3331,34 @@
               },
               "period"              : "24x7"
             },
-            "obsess"                    : true,
-            "retain"                    : {
-              "nonstatus"               : true,
-              "status"                  : true
+            "obsess"                : true,
+            "retain"                : {
+              "nonstatus"           : true,
+              "status"              : true
             },
-            "servicegroups"             : [
+            "servicegroups"         : [
               {
-                "enable"                : false,
-                "name"                  : null
+                "enable"            : false,
+                "name"              : null
               }
             ],
-            "stalking"                  : {
-              "critical"                : true,
-              "ok"                      : true,
-              "unknown"                 : true,
-              "warning"                 : true
+            "stalking"              : {
+              "critical"            : false,
+              "ok"                  : false,
+              "unknown"             : false,
+              "warning"             : false
             },
-            "use"                       : null
+            "use"                   : null
           }
         ]
-      },    
+      },
+
+
+      
+      
+
+
+
       {
         "enable"                      : true,
         "iac"                         : [],
