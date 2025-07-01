@@ -3351,28 +3351,29 @@
           }
         ]
       },    
+
       {
         "enable"                      : true,
         "iac"                         : [],
         "ops"                         : [
           {
-            "_note"                     : "local-service",
+            "_note"                     : "Oracle Cloud Infrastructure",
             "action_url"                : null,
             "check"                     : {
               "active"                  : null,
               "command"                 : null,
               "freshness"               : {
-                "enable"                : null,
+                "enable"                : false,
                 "threshold"             : null
               },
               "initial"                 : null,
               "interval"                : {
-                "check"                 : 5,
+                "check"                 : null,
                 "retry"                 : 1
               },
-              "max_attempts"            : 4,
+              "max_attempts"            : null,
               "passive"                 : null,
-              "perfdata"                : null,
+              "perfdata"                : true,
               "period"                  : null
             },
             "contacts"                  : [
@@ -3389,15 +3390,15 @@
             ],
             "enable"                    : true,
             "event_handler"             : {
-              "enable"                  : false,
+              "enable"                  : true,
               "name"                    : null
             },
             "flap_detection"            : {
-              "enable"                  : false,
+              "enable"                  : true,
               "options"                 : {
-                "down"                  : false,
-                "operational"           : false,
-                "unreachable"           : false
+                "down"                  : true,
+                "operational"           : true,
+                "unreachable"           : true
               },
               "threshold"               : {
                 "high"                  : null,
@@ -3412,8 +3413,8 @@
             ],
             "hostgroups"                : [
               {
-                "enable"                : false,
-                "name"                  : "local-service"
+                "enable"                : true,
+                "name"                  : "oci-data"
               }
             ],
             "icon"                      : {
@@ -3424,8 +3425,8 @@
             },
             "is_volatile"               : false,
             "name"                      : {
-              "display"                 : "Local Service",
-              "string"                  : "local-service"
+              "display"                 : "Oracle Cloud Infrastructure",
+              "string"                  : "oci-cloud"
             },
             "notes"                     : {
               "string"                  : null,
@@ -3447,8 +3448,8 @@
             },
             "obsess"                    : null,
             "retain"                    : {
-              "nonstatus"               : null,
-              "status"                  : null
+              "nonstatus"               : true,
+              "status"                  : true
             },
             "servicegroups"             : [
               {
@@ -3457,12 +3458,12 @@
               }
             ],
             "stalking"                  : {
-              "critical"                : false,
-              "ok"                      : false,
-              "unknown"                 : false,
-              "warning"                 : false
+              "critical"                : true,
+              "ok"                      : true,
+              "unknown"                 : true,
+              "warning"                 : true
             },
-            "use"                       : "generic-service"
+            "use"                       : null
           }
         ]
       }
