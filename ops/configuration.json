@@ -3351,8 +3351,6 @@
           }
         ]
       },
-       
-      
       {
         "enable"                      : true,
         "iac"                         : [],
@@ -3465,6 +3463,124 @@
               "warning"                 : true
             },
             "use"                       : "generic-service"
+          }
+        ]
+      },
+
+
+
+      {
+        "enable"                      : true,
+        "iac"                         : [],
+        "ops"                         : [
+          {
+            "_note"                     : "Oracle Cloud Infrastructure",
+            "action_url"                : null,
+            "check"                     : {
+              "active"                  : true,
+              "command"                 : null,
+              "freshness"               : {
+                "enable"                : true,
+                "threshold"             : null
+              },
+              "initial"                 : null,
+              "interval"                : {
+                "check"                 : 10,
+                "retry"                 : 2
+              },
+              "max_attempts"            : 3,
+              "passive"                 : true,
+              "perfdata"                : true,
+              "period"                  : "24x7"
+            },
+            "contacts"                  : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "contact_groups"            : [
+              {
+                "enable"                : null,
+                "name"                  : null
+              }
+            ],
+            "enable"                    : true,
+            "event_handler"             : {
+              "enable"                  : true,
+              "name"                    : null
+            },
+            "flap_detection"            : {
+              "enable"                  : true,
+              "options"                 : {
+                "down"                  : true,
+                "operational"           : true,
+                "unreachable"           : true
+              },
+              "threshold"               : {
+                "high"                  : null,
+                "low"                   : null
+              }
+            },
+            "hosts"                     : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "hostgroups"                : [
+              {
+                "enable"                : false,
+                "name"                  : "Oracle Cloud Infrastructure"
+              }
+            ],
+            "icon"                      : {
+              "file"                    : {
+                "alternate"             : null,
+                "image"                 : null
+              }
+            },
+            "is_volatile"               : false,
+            "name"                      : {
+              "display"                 : "Oracle Cloud Infrastructure",
+              "string"                  : "oci-cloud"
+            },
+            "notes"                     : {
+              "string"                  : null,
+              "url"                     : null
+            },
+            "notification"          : {
+              "enable"              : true,
+              "first_delay"         : null,
+              "interval"            : 60,
+              "options"             : {
+                "critical"          : true,
+                "flapping"          : false,
+                "recovery"          : false,
+                "scheduled_down"    : false,
+                "unknown"           : true,
+                "warning"           : true
+              },
+              "period"              : "24x7"
+            },
+            "obsess"                    : true,
+            "retain"                    : {
+              "nonstatus"               : true,
+              "status"                  : true
+            },
+            "servicegroups"             : [
+              {
+                "enable"                : false,
+                "name"                  : null
+              }
+            ],
+            "stalking"                  : {
+              "critical"                : true,
+              "ok"                      : true,
+              "unknown"                 : true,
+              "warning"                 : true
+            },
+            "use"                       : null
           }
         ]
       }
