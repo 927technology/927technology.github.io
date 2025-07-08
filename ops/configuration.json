@@ -891,7 +891,7 @@
           },  
           "encryption"              : {
             "enable"                : true,
-            "keyfile"               : "secrets/module.pwd"
+            "keyfile"               : "/etc/mod_gearman/secrets/module.pwd"
           },
           "eventhandler"            : true,
           "id"                      : "b9ac339e-91d2-4420-8461-834214b86c86",
@@ -950,7 +950,7 @@
           "encryption"              : {
             "enable"                : true,
             "key"                   : null,
-            "keyfile"               : "secrets/worker.pwd"
+            "keyfile"               : "/etc/mod_gearman/secrets/worker.pwd"
           },
           "eventhandler"            : true,
           "fork_on_exec"            : false,
@@ -977,7 +977,7 @@
           },
           "notifications"           : true,
           "p1_file"                 : "/usr/share/mod_gearman/mod_gearman_p1.pl",
-          "pidfile"                 : "/var/mod_gearman/mod_gearman_worker.pid",
+          "pidfile"                 : "/run/mod_gearman_worker.pid",
           "server"                  : {
             "host"                  : "localhost",
             "port"                  : 4730
