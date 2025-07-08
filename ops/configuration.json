@@ -956,7 +956,10 @@
           "fork_on_exec"            : false,
           "host"                    : {
             "enable"                : true,
-            "groups"                : []
+            "groups"                : [
+              "servers",
+              "clouds"
+            ]
           },
           "id"                      : "1494cee4-37dc-406d-b136-b4ff87a6108d",
           "load_limit"              : {
