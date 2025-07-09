@@ -957,8 +957,10 @@
           "host"                    : {
             "enable"                : true,
             "groups"                : [
-              "servers",
-              "clouds"
+              "cloud-iac",
+              "cloud-oci",
+              "cloud-ops",
+              "cloud-tenancy"
             ]
           },
           "id"                      : "1494cee4-37dc-406d-b136-b4ff87a6108d",
